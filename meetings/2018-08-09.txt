@@ -1,0 +1,26 @@
+CENSUS WORKING GROUP
+
+Members 
+Ari Lamstein <ari@lamsteinconsulting.com>
+Hadley Wickham <hadley@rstudio.com>
+Jeffrey Meisel (CENSUS/ADCOM FED)<jeffrey.meisel@census.gov> CMO, CENSUS
+John Mertic <jmertic@linuxfoundation.org>
+Joseph Rickert <joseph.rickert@rstudio.com>
+Kyle Walker <kwalkerdata@gmail.com>
+Logan T Powell (CENSUS/CNMP FED)" <logan.t.powell@census.gov>
+Zachary Richard Whitman (CENSUS/DITD FED)" <zachary.richard.whitman@census.gov> CDO, CENSUS
+
+Minutes 8/9/18 Meeting by JBR
+Ari, Joe and Jeff attended this first meeting of the working group.
+
+The three of us discussed expectations for the working group which included providing an environment for discussing issues about working with Census data, planning events to disseminate knowledge about Census data and analytical practices throughout the greater R Community, providing opportunities for R users and developers to interact with Census Bureau experts, and developing tools to cultivate a fruitful collaboration among data scientists working with Census data.
+
+We developed a list of proposed initial milestones:
+
+Recruiting additional members of the working group. (Ezra Haber Glenn, author of the acs package was mentioned
+The completion and public availability of the course being developed by Census: www.census.gov/academy
+The completion of the guide to R packages that are specific to analyzing Census data
+Establishing regular working group meetings and possibly webinars where R users could interact with Census experts
+The creation of a Task View (or contribution to the Official Statistics Task View) or other web property for Census data and analytics with R.
+
+The next meeting was set for August 25, 2018 at 1PM Pacific Time.
