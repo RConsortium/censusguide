@@ -12,7 +12,9 @@ Completed:
     - We are using Github Pages
 - Milestone 2: Assemble list of resources to include:
     - Census Resources [1](https://github.com/RConsortium/censusguide/tree/master/training-resources), [2](https://github.com/RConsortium/censusguide/blob/master/census-links.md).
-    - R packages: [1](https://github.com/RConsortium/censusguide/blob/master/r-packages.csv)
+    - R packages: [1](https://github.com/RConsortium/censusguide/blob/master/r-packages.csv).
+
+If you believe that we are missing any critical resources, or that we should not include any resources which are present in the above links, then please [file an issue](https://github.com/RConsortium/censusguide/issues) on the github repository.
 
 Future Milestones:
 - Milestone 3: Complete Publication of Guide
