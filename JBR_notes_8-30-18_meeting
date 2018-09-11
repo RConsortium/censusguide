@@ -1,0 +1,28 @@
+Minutes of 8/30/18 Meeting
+Cesnsus working Group Meeting
+Notes by JBR
+Attendees:
+Ari Lamstein
+Alexandra Barker (alexandra.s.barker@census.gov)
+Joseph Rickert
+
+Jeffrey Meisel has left the Census Bureau and has withdrawn from the working group.
+
+Alexandra Barker from Census has joined the group. Alexandra expects that the first R-based training course on using a Census survey data set will go online within a month. The course will be addressed to people who are new to both R and the Census data and will take approximately four hours to work through.  The Census Academy will launch two months after the course is released.
+
+After the course is available, the working group will write an R Consortium Blog post.
+Ari also expects to make progress on his ISC project to populate the RC/Census GitHub site with information and recommendations about R packages and resources for analyzing Census data.
+
+The group spent some time discussing what the call to action should be in the planned post. The initial call might be a modest request to have people examine the training course and make suggestions for additional information that could be provided. 
+
+Future steps might include a webinar or series of webinars that assume the basic knowledge provided in the course and more ambitious projects including a contest where R community members would analyze a Census data set.
+
+The group also spent time discussing what groups are likely to find the Census data and R resources particularly helpful. Economists, political scientists, marketing people and journalists headed the list. Alexandra pointed out that the site www.censusreporter. org is popular with journalists.
+
+The next meeting of the WG is scheduled for 9/20 at 1:PM PST.
+
+In a subsequent email, Ari wrote that Logan  mentioned that there is now actually an official Census Bureau Slack community. It even has an R channel!
+
+You can learn more here:
+
+https://github.com/RConsortium/censusguide/blob/master/training-resources/trainings.md#community-and-contacts
