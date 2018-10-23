@@ -1,4 +1,6 @@
 # A Guide to Working with U.S. Census Data in R
+#### Written by Ari Lamstein and Logan Powell
+#### Sponsored by the R Consortium as part of the R Consortium Census Working Group
 
 The U.S. Census Bureau is the premier source of data about America's people, places and economy. This makes the Bureau a natural source of information for data analysts.
 
@@ -10,17 +12,23 @@ R programmers who seek to work with US Census Data often run into two problems:
 
 This document aims to help R programmers with these common problems. It is intended to be an overview that helps jump start your analysis; it is not intended to cover every dataset, or every package, which is available.
 
-## What Data is Available?
+This Guide is written in 3 parts:
+
+1. About the Census Bureau
+2. Existing R packages on CRAN for working with Census Data
+3. Resources for Learning More
+
+## About the Census Bureau
+
+### Demographic Data
 
 The Census Bureau runs over 100 Censuses, Surveys and Programs. You can view the full list [here](https://www.census.gov/programs-surveys/censuses.html).
 
 When creating this guide, however, we sought to find an objective way to highlight the most commonly requested datasets. When looking at API requests, we found that the following five programs account for much more traffic than all other programs.
 
-1. [Geography](https://www.census.gov/geography.html). Geography is central to the work of the Census Bureau, providing the framework for survey design, sample selection, data collection, tabulation, and dissemination. The Census Bureau provides free access to its geographic data and products such as the TIGER/Line Shapefiles, KMLs, TIGERweb, cartographic boundary files, geographic relationship files, and reference and thematic maps.
-
 1. [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/). The ACS regularly gathers information previously contained only in the long form of the decennial census, such as ancestry, educational attainment, income, language proficiency, migration, disability, employment, and housing characteristics. These data are used by many public-sector, private-sector, and not-for-profit stakeholders to allocate funding, track shifting demographics, plan for emergencies, and learn about local communities. Sent to approximately 295,000 addresses monthly (or 3.5 million per year), it is the largest household survey that the Census Bureau administers.  [[Wikipedia](https://en.wikipedia.org/wiki/American_Community_Survey)]
 
-2. [Decennial Census of Population and Housing](https://www.census.gov/programs-surveys/decennial-census.html). The Decennial Census is what most people think of when they think of "The Census". It counts each resident of the country, where they live on April 1, every ten years ending in zero. The Constitution mandates the enumeration to determine how to apportion the House of Representatives among the states. [[Census Bureau Website](https://www.census.gov/programs-surveys/decennial-census.html)]
+2. [Decennial Census of Population and Housing](https://www.census.gov/programs-surveys/decennial-census.html). The Decennial Census is what most people think of when they think of "The Census". It counts each resident of the country, where they live on April 1, every ten years ending in zero. The Constitution mandates the enumeration to determine how to apportion the House of Representatives among the states. The Decennial Census is the largest peacetime mobilization in the US. [[Census Bureau Website](https://www.census.gov/programs-surveys/decennial-census.html)]
 
 3. [Population Estimates Program](https://www.census.gov/programs-surveys/popest.html). Each year, the United States Census Bureau produces and publishes estimates of the population for the nation, states, counties, state/county equivalents, and Puerto Rico. We estimate the resident population for each year since the most recent decennial census by using measures of population change. The resident population includes all people currently residing in the United States.
 
@@ -31,10 +39,25 @@ entire time series of estimates from April 1, 2010 to July 1 of the current year
 
 4. [Survey of Business Owners](https://www.census.gov/programs-surveys/sbo.html). The Survey of Business Owners (SBO) provides the only comprehensive, regularly collected source of information on selected economic and demographic characteristics for businesses and business owners by gender, ethnicity, race, and veteran status.
 
-5. [International Data Base](https://www.census.gov/programs-surveys/international-programs/about/idb.html)
+5. [International Data Base](https://www.census.gov/programs-surveys/international-programs/about/idb.html). The International Data Base (IDB) was developed by the U.S. Census Bureau to provide access to accurate and timely demographic measures for populations around the world.  The database includes a comprehensive set of indicators, as produced by the U.S. Census Bureau since the 1960s.  Through sponsorship from various U.S. Government agencies, the IDB is updated on a regular basis to provide information needed for research, program planning, and policy-making decisions, in the U.S. and globally.
 
-Clarify that the above list is by means the totality of all the data that Census publishes.
-In fact, Census runs over 100 Censuses, Surveys and Programs.
+ Data included in the IDB consist of indicators developed from censuses, surveys, administrative records, and special measures of HIV/AIDS-related mortality.  Through evaluation and adjustment of data from these sources, measures of population, mortality, fertility, and net migration are estimated for current and past years and then used as the basis for projections to 2050.
+The IDB provides estimates and projections for 228 countries and areas which have populations of 5,000 or more and as recognized by the U.S. Department of State. Population size (by single year of age and sex) and components of change (fertility, mortality, and migration) are provided from an initial or base year through 2050, for each calendar year.  This level of detail provides an important foundation for tracking the demographic impacts of HIV/AIDS and related conditions, as well as events of concern that are affecting populations around the globe.
+[International Data Base](https://www.census.gov/programs-surveys/international-programs/about/idb.html).
+
+### Geography
+
+Geography is a central concept to the Census Bureau. Statistics are normally reported for either the entire nation, or some specific geographic subdivision of the country. This diagram shows the list of Census geographies, as well as how they relate to each other:
+![Census Geo](census-geo.png) (Taken from the [Standard Hierarchy of Census Geographic Entities](https://www2.census.gov/geo/pdfs/reference/geodiagram.pdf))
+
+Note that not every demographic dataset provides data at every geographic level.
+
+Census provides free access to its geographic data and products such as the TIGER/Line Shapefiles, KMLs, TIGERweb, cartographic boundary files, geographic relationship files, and reference and thematic maps. You can access this data [here](https://www.census.gov/geography.html).
+
+### API
+
+https://www.census.gov/developers/
+
 
 ## CRAN Packages that work with U.S. Census Data
 
@@ -160,8 +183,7 @@ In fact, Census runs over 100 Censuses, Surveys and Programs.
 	</tbody>
 </table>
 
-
-## Census Training Resources
+## Learning More
 
 The Census Bureau has many resources for learning how to work with datasets they publish.
 
