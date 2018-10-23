@@ -1,33 +1,40 @@
 # A Guide to Working with U.S. Census Data in R
 
-(Insert information about US Census Bureau)
+The U.S. Census Bureau is the premier source of data about America's people, places and economy. This makes the Bureau a natural source of information for data analysts.
 
-The goal of this guide is to help R programmers who are working with Census:
+R programmers who seek to work with US Census Data often run into two problems:
 
-1. Understand the array of data which the U.S. Census Bureau publishes.
+1. Understanding exactly what data the Census Bureau publishes.
 
-1. Understand the array of R packages currently on CRAN which facilitate working with U.S. Census data.
+2. Understanding what R packages on CRAN might help with their analyses.
 
-2. Understand resources the Census Bureau provides for getting help with Census Data.
+This document aims to help R programmers with these common problems. It is intended to be an overview that helps jump start your analysis; it is not intended to cover every dataset, or every package, which is available.
 
 ## What Data is Available?
 
-Some of the most popular datasets are:
+The Census Bureau runs over 100 Censuses, Surveys and Programs. You can view the full list [here](https://www.census.gov/programs-surveys/censuses.html).
 
-<Add paragraph description of each dataset>
+When creating this guide, however, we sought to find an objective way to highlight the most commonly requested datasets. When looking at API requests, we found that the following five programs account for much more traffic than all other programs.
 
-1. [American Community Survey](https://www.census.gov/programs-surveys/acs/)
+1. [Geography](https://www.census.gov/geography.html). Geography is central to the work of the Census Bureau, providing the framework for survey design, sample selection, data collection, tabulation, and dissemination. The Census Bureau provides free access to its geographic data and products such as the TIGER/Line Shapefiles, KMLs, TIGERweb, cartographic boundary files, geographic relationship files, and reference and thematic maps.
 
-2. [Decennial Census of Population and Housing](https://www.census.gov/programs-surveys/decennial-census.html)
+1. [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/). The ACS regularly gathers information previously contained only in the long form of the decennial census, such as ancestry, educational attainment, income, language proficiency, migration, disability, employment, and housing characteristics. These data are used by many public-sector, private-sector, and not-for-profit stakeholders to allocate funding, track shifting demographics, plan for emergencies, and learn about local communities. Sent to approximately 295,000 addresses monthly (or 3.5 million per year), it is the largest household survey that the Census Bureau administers.  [[Wikipedia](https://en.wikipedia.org/wiki/American_Community_Survey)]
 
-3. [Population Estimates Program](https://www.census.gov/programs-surveys/popest.html)
+2. [Decennial Census of Population and Housing](https://www.census.gov/programs-surveys/decennial-census.html). The Decennial Census is what most people think of when they think of "The Census". It counts each resident of the country, where they live on April 1, every ten years ending in zero. The Constitution mandates the enumeration to determine how to apportion the House of Representatives among the states. [[Census Bureau Website](https://www.census.gov/programs-surveys/decennial-census.html)]
 
-4. [Survey of Business Owners](https://www.census.gov/programs-surveys/sbo.html)
+3. [Population Estimates Program](https://www.census.gov/programs-surveys/popest.html). Each year, the United States Census Bureau produces and publishes estimates of the population for the nation, states, counties, state/county equivalents, and Puerto Rico. We estimate the resident population for each year since the most recent decennial census by using measures of population change. The resident population includes all people currently residing in the United States.
+
+ With each annual release of population estimates, the Population Estimates program revises and updates the
+entire time series of estimates from April 1, 2010 to July 1 of the current year, which we refer to as the vintage year. We use the term “vintage” to denote an entire time series created with a consistent population starting point and methodology. The release of a new vintage of estimates supersedes any previous series and incorporates the most up-to-date input data and methodological improvements.
+
+ The population estimates are used for federal funding allocations, as controls for major surveys including the Current Population Survey and the American Community Survey, for community development, to aid business planning, and as denominators for statistical rates. Overall, our estimates time series from 2000 to 2010 was very accurate, even accounting for ten years of population change. The average absolute difference between the final total resident population estimates and 2010 Census counts was only about 3.1 percent across all counties. [[PEP Methodology Paper](https://www2.census.gov/programs-surveys/popest/technical-documentation/methodology/2010-2017/2017-natstcopr-meth.pdf)].
+
+4. [Survey of Business Owners](https://www.census.gov/programs-surveys/sbo.html). The Survey of Business Owners (SBO) provides the only comprehensive, regularly collected source of information on selected economic and demographic characteristics for businesses and business owners by gender, ethnicity, race, and veteran status.
 
 5. [International Data Base](https://www.census.gov/programs-surveys/international-programs/about/idb.html)
 
 Clarify that the above list is by means the totality of all the data that Census publishes.
-In fact, Census runs over 100 Censuses, Surveys and Programs. The full list can be found [here](https://www.census.gov/programs-surveys/censuses.html).
+In fact, Census runs over 100 Censuses, Surveys and Programs.
 
 ## CRAN Packages that work with U.S. Census Data
 
