@@ -19,11 +19,11 @@ Note: This Guide is intended to be a survey of the field. As such it does not co
 
 ## Part 1: What the Census Bureau Provides
 
-This section of the Guide covers:
-  * two types of data that Census Provides (demographic and geographic)
-  * two ways that Census distributes this data (American FactFinder and an API).
+This section of the Guide starts by describing the two main types of data that Census provides: demographic and geographic datasets. We will then look at two methods that Census provides to facilitate accessing the data.
 
-### Demographic Datasets
+### Data
+
+#### Demographic Datasets
 
 The core mission of the Census Bureau is to provide information about America's people, places and economy. It does this by running 100 Censuses, Surveys and Programs. This document refers to the output of these programs as "datasets". You can view the full list of datasets [here](https://www.census.gov/programs-surveys/surveys-programs.html).
 
@@ -51,11 +51,13 @@ Census provides free access to its geographic data and products such as the TIGE
 
 Note: not every demographic dataset provides data at every geographic level. For example, the Decennial Census publishes data down to Block level. But the American Community Survey only publishes data down to the Block Group level. And the Population Estimates Program only publishes data down to the county level.
 
-### American Fact Finder
+### Data Dissemination
+
+#### American Fact Finder
 
 [American FactFinder](https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml) is website that Census provides to let you explore a suite of a free GUI that Census provides. By
 
-### API
+#### API
 
 The Census Bureau has an API which provides access to many of its datasets. You can learn more about the API, including which datasets are available, [here](https://www.census.gov/developers/).
 
