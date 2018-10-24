@@ -44,12 +44,12 @@ Below we list and describe the five most popular datasets that Census publishes.
 
 Geography is a central concept to the Census Bureau. Statistics are normally reported for either the entire nation, or some specific geographic subdivision of the country.
 
-While most people can name the state and county that they live in, as the diagram below shows, the Census Bureau has a very complex view of Geography:
+As the diagram below shows, the Census Bureau has a very complex view of Geography:
 ![Census Geo](census-geo.png) (Source: [Standard Hierarchy of Census Geographic Entities](https://www2.census.gov/geo/pdfs/reference/geodiagram.pdf))
 
 Census provides free access to its geographic data and products such as the TIGER/Line Shapefiles, KMLs, TIGERweb, cartographic boundary files, geographic relationship files, and reference and thematic maps. You can access this data [here](https://www.census.gov/geography.html).
 
-Note: not every demographic dataset provides data at every geographic level.
+Note: not every demographic dataset provides data at every geographic level. For example, the Decennial Census publishes data down to Block level. But the American Community Survey only publishes data down to the Block Group level. And the Population Estimates Program only publishes data down to the county level.
 
 ### American Fact Finder
 
