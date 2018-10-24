@@ -19,19 +19,19 @@ Note: This Guide is intended to be a survey of the field. As such it does not co
 
 ## Part 1: What the Census Bureau Provides
 
-This section of the Guide will cover:
-  * two types of datasets that Census Provides (demographic and geographic)
-  * two ways that Census distributes these datasets (American FactFinder and an API).
+This section of the Guide covers:
+  * two types of data that Census Provides (demographic and geographic)
+  * two ways that Census distributes this data (American FactFinder and an API).
 
 ### Demographic Datasets
 
-The core mission of the Census Bureau is to provide information about America's people, places and economy. It does this by running 100 Censuses, Surveys and Programs. This document refers to the output of these various programs as "datasets". You can view the full list of datasets [here](https://www.census.gov/programs-surveys/surveys-programs.html).
+The core mission of the Census Bureau is to provide information about America's people, places and economy. It does this by running 100 Censuses, Surveys and Programs. This document refers to the output of these programs as "datasets". You can view the full list of datasets [here](https://www.census.gov/programs-surveys/surveys-programs.html).
 
-Since this Guide aspires to provide an introduction, it is not feasible to cover each of those datasets. Instead we looked at API requests and realized that the five most popular datasets account for the bulk of requests. We describe these five datasets below.
+Below we list and describe the five most popular datasets that Census publishes. To measure popularity we looked at the number of API requests that each dataset received.
 
-1. [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/). The ACS regularly gathers information previously contained only in the long form of the decennial census, such as ancestry, educational attainment, income, language proficiency, migration, disability, employment, and housing characteristics. These data are used by many public-sector, private-sector, and not-for-profit stakeholders to allocate funding, track shifting demographics, plan for emergencies, and learn about local communities. Sent to approximately 295,000 addresses monthly (or 3.5 million per year), it is the largest household survey that the Census Bureau administers.  Source: [Wikipedia](https://en.wikipedia.org/wiki/American_Community_Survey).
+1. [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/). The ACS regularly gathers information previously contained only in the long form of the decennial census, such as ancestry, educational attainment, income, language proficiency, migration, disability, employment, and housing characteristics. These data are used by many public-sector, private-sector, and not-for-profit stakeholders to allocate funding, track shifting demographics, plan for emergencies, and learn about local communities. Sent to approximately 295,000 addresses monthly (or 3.5 million per year), it is the largest household survey that the Census Bureau administers.  (Source: [Wikipedia](https://en.wikipedia.org/wiki/American_Community_Survey)).
 
-2. [Decennial Census of Population and Housing](https://www.census.gov/programs-surveys/decennial-census.html). The Decennial Census is what most people think of when they think of "The Census". It counts each resident of the country, where they live on April 1, every ten years ending in zero. The Constitution mandates the enumeration to determine how to apportion the House of Representatives among the states. The Decennial Census is the largest peacetime mobilization in the US. Source: (Source: [Census Bureau Website](https://www.census.gov/programs-surveys/decennial-census.html)).
+2. [Decennial Census of Population and Housing](https://www.census.gov/programs-surveys/decennial-census.html). The Decennial Census is what most people think of when they think of "The Census". It counts each resident of the country, where they live on April 1, every ten years ending in zero. The Constitution mandates the enumeration to determine how to apportion the House of Representatives among the states. The Decennial Census is the largest peacetime mobilization in the US. (Source: [Census Bureau Website](https://www.census.gov/programs-surveys/decennial-census.html)).
 
 3. [Population Estimates Program](https://www.census.gov/programs-surveys/popest.html). Each year, the United States Census Bureau produces and publishes estimates of the population for the nation, states, counties, state/county equivalents, and Puerto Rico. We estimate the resident population for each year since the most recent decennial census by using measures of population change. The resident population includes all people currently residing in the United States.
 
