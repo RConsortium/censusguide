@@ -1,32 +1,31 @@
+# <span style="color: red">DRAFT</span>
 # A Guide to Working with U.S. Census Data in R
 #### Written by Ari Lamstein and Logan Powell
 #### Sponsored by the R Consortium as part of the R Consortium Census Working Group
 
 The U.S. Census Bureau is the premier source of data about America's people, places and economy. This makes the Bureau a natural source of information for data analysts. R programmers who start working with Census Data, however, often run into two problems:
 
-1. Understanding exactly what data the Census Bureau publishes.
+1. Understanding what data the Census Bureau publishes.
 
-2. Understanding what CRAN packages might help with their analyses.
+2. Understanding what CRAN packages are available to help with their project.
 
-This document aims to help R programmers with these common problems. It has three parts:
+This document aims to help R programmers who are confronted with these  problems. It has three parts:
 
-* Part 1: What the Census Bureau Provides
-* Part 2: How CRAN can Help
-* Part 3: Learning More
+* [Part 1: What the Census Bureau Provides](#part-1-what-the-census-bureau-provides)
+* [Part 2: How CRAN Can Help](#part-2-how-cran-can-help)
+* [Part 3: Learning More](#part-3-learning-more)
 
-Note: This Guide is intended to provide an overview that helps novices become more productive in less time. It is not intended to provide an exhaustive list of every dataset that the Census Bureau publishes, or every CRAN package that works with Census data.
+Note: This Guide is intended to be a survey of the field. As such it does not cover every dataset which Census publishes, nor every Census-related package which is on CRAN.
 
 ## Part 1: What the Census Bureau Provides
 
-This Guide will cover four products and services that Census provides:
-1. Demographic Datasets
-2. Geography
-3. American FactFinder
-4. An API
+This section of the Guide will cover:
+  * two types of datasets that Census Provides (demographic and geographic)
+  * two ways that Census distributes these datasets (American FactFinder and an API).
 
 ### Demographic Datasets
 
-The core mission of the Census Bureau is to provide information about America's people, places and economy. It does this by running 100 Censuses, Surveys and Programs. This document will refer to collectively refer to these as "datasets". You can view the full list of datasets [here](https://www.census.gov/programs-surveys/surveys-programs.html).
+The core mission of the Census Bureau is to provide information about America's people, places and economy. It does this by running 100 Censuses, Surveys and Programs. This document refers to the output of these various programs as "datasets". You can view the full list of datasets [here](https://www.census.gov/programs-surveys/surveys-programs.html).
 
 Since this Guide aspires to provide an introduction, it is not feasible to cover each of those datasets. Instead we looked at API requests and realized that the five most popular datasets account for the bulk of requests. We describe these five datasets below.
 
@@ -71,7 +70,7 @@ The Census Bureau has an API which provides access to many of its datasets. You 
 Note that several R packages provide access to the API.
 
 
-## Part 2: How CRAN can Help
+## Part 2: How CRAN Can Help
 
 <table>
 	<thead>
@@ -195,7 +194,7 @@ Note that several R packages provide access to the API.
 	</tbody>
 </table>
 
-## Learning More
+## Part 3: Learning More
 
 The Census Bureau has many resources for learning how to work with datasets they publish.
 
