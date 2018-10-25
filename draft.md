@@ -15,36 +15,36 @@ This document aims to help R programmers who are confronted with these  problems
 * [Part 2: How CRAN Can Help](#part-2-how-cran-can-help)
 * [Part 3: Learning More](#part-3-learning-more)
 
-Note: This Guide is intended to be a survey of the field. As such it does not cover every dataset which Census publishes, nor every Census-related package which is on CRAN.
+Note: This Guide is intended to provide a survey of the field: it does not cover every dataset which Census publishes, nor every Census-related package which is on CRAN.
 
 ## Part 1: What the Census Bureau Provides
 
-This section of the Guide starts by describing the two main types of data that Census provides: demographic and geographic datasets. We will then look at two methods that Census provides to facilitate accessing the data.
-
 ### Data
 
-#### Demographic Datasets
+Broadly speaking, the Census Bureau can be viewed as publishing two types of data: demographic and geographic.
 
-The core mission of the Census Bureau is to provide information about America's people, places and economy. It does this by running 100 Censuses, Surveys and Programs. This document refers to the output of these programs as "datasets". You can view the full list of datasets [here](https://www.census.gov/programs-surveys/surveys-programs.html).
+#### Demographic Data
 
-Below we list and describe the five most popular datasets that Census publishes. To measure popularity we looked at the number of API requests that each dataset received.
+The core mission of the Census Bureau is to provide information about America's people, places and economy. It does this by running over 100 Censuses, Surveys and Programs. This document refers to the output of these programs as "datasets". You can view the full list of datasets [here](https://www.census.gov/programs-surveys/surveys-programs.html).
+
+Below we describe the five most popular datasets that Census publishes. In this case we used API requests as a measure of popularity.
 
 1. [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/). The ACS regularly gathers information previously contained only in the long form of the decennial census, such as ancestry, educational attainment, income, language proficiency, migration, disability, employment, and housing characteristics. These data are used by many public-sector, private-sector, and not-for-profit stakeholders to allocate funding, track shifting demographics, plan for emergencies, and learn about local communities. Sent to approximately 295,000 addresses monthly (or 3.5 million per year), it is the largest household survey that the Census Bureau administers.  (Source: [Wikipedia](https://en.wikipedia.org/wiki/American_Community_Survey)).
 
-2. [Decennial Census of Population and Housing](https://www.census.gov/programs-surveys/decennial-census.html). The Decennial Census is what most people think of when they think of "The Census". It counts each resident of the country, where they live on April 1, every ten years ending in zero. The Constitution mandates the enumeration to determine how to apportion the House of Representatives among the states. The Decennial Census is the largest peacetime mobilization in the US. (Source: [Census Bureau Website](https://www.census.gov/programs-surveys/decennial-census.html)).
+2. [Decennial Census of Population and Housing](https://www.census.gov/programs-surveys/decennial-census.html). The Decennial Census is what most people think of when they think of "The Census". It counts each resident of the country, where they live on April 1, every ten years ending in zero. The Constitution mandates the enumeration to determine how to apportion the House of Representatives among the states. The Decennial Census is the largest peacetime mobilization in the US. (Source: [Decennial Census of Population and Housing](https://www.census.gov/programs-surveys/decennial-census.html)).
 
 3. [Population Estimates Program (PEP)](https://www.census.gov/programs-surveys/popest.html). Each year, PEP publishes estimates of the population for the nation, states, counties, state/county equivalents, and Puerto Rico. It estimates the resident population for each year since the most recent decennial census by using measures of population change (i.,e. births, deaths and migration). The resident population includes all people currently residing in the United States. PEP estimates are used for federal funding allocations, as controls for major surveys including the Current Population Survey and the American Community Survey, for community development, to aid business planning, and as denominators for statistical rates. (Source: [PEP Methodology Paper](https://www2.census.gov/programs-surveys/popest/technical-documentation/methodology/2010-2017/2017-natstcopr-meth.pdf)).
 
-4. [Survey of Business Owners](https://www.census.gov/programs-surveys/sbo.html). The Survey of Business Owners (SBO) provides the only comprehensive, regularly collected source of information on selected economic and demographic characteristics for businesses and business owners by gender, ethnicity, race, and veteran status.
+4. [Survey of Business Owners](https://www.census.gov/programs-surveys/sbo.html). The Survey of Business Owners (SBO) provides the only comprehensive, regularly collected source of information on selected economic and demographic characteristics for businesses and business owners by gender, ethnicity, race, and veteran status. (Source: [Survey of Business Owners](https://www.census.gov/programs-surveys/sbo.html)).
 
 5. [International Data Base](https://www.census.gov/programs-surveys/international-programs/about/idb.html). The International Data Base (IDB) was developed to provide access to accurate and timely demographic measures for populations around the world.  The database includes a comprehensive set of indicators, as produced by the U.S. Census Bureau since the 1960s. The IDB is updated on a regular basis to provide information needed for research, program planning, and policy-making decisions, in the U.S. and globally. (Source:
 [International Data Base](https://www.census.gov/programs-surveys/international-programs/about/idb.html)).
 
-### Geography
+#### Geographic Data
 
 Geography is a central concept to the Census Bureau. Statistics are normally reported for either the entire nation, or some specific geographic subdivision of the country.
 
-As the diagram below shows, the Census Bureau has a very complex view of Geography:
+As the diagram below shows, the Census Bureau has a very complex view of Geography. While most Americans know the name of the state and county that they live in, very few can name the tract or block that they live in!
 ![Census Geo](census-geo.png) (Source: [Standard Hierarchy of Census Geographic Entities](https://www2.census.gov/geo/pdfs/reference/geodiagram.pdf))
 
 Census provides free access to its geographic data and products such as the TIGER/Line Shapefiles, KMLs, TIGERweb, cartographic boundary files, geographic relationship files, and reference and thematic maps. You can access this data [here](https://www.census.gov/geography.html).
@@ -53,9 +53,17 @@ Note: not every demographic dataset provides data at every geographic level. For
 
 ### Data Dissemination
 
+The primary tools that Census provides for accessing its data are American FactFinder and its API.
+
 #### American Fact Finder
 
-[American FactFinder](https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml) is website that Census provides to let you explore a suite of a free GUI that Census provides. By
+[American FactFinder (AFF)](https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml) is website that lets you:
+
+* **Community Facts** Will quickly show you facts about a region by simply entering its name.
+* **Guided Search** Walks you through a questionnaire that will lead you to a dataset which answers your question
+* **Advanced Search** Prompts you for a table ID / search term and geography, and then shows you all the data available.
+
+The result from each page will allow you to download the data as a CSV file.
 
 #### API
 
