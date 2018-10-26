@@ -1,6 +1,6 @@
 # <span style="color: red">DRAFT</span>
 # A Guide to Working with U.S. Census Data in R
-#### Written by Ari Lamstein and Logan Powell
+#### Written by Ari Lamstein and Logan Powell, October 2018
 #### Sponsored by the R Consortium as part of the R Consortium Census Working Group
 
 The U.S. Census Bureau is the premier source of data about America's people, places and economy. This makes the Bureau a natural source of information for data analysts. R programmers who start working with Census Data, however, often run into two problems:
@@ -21,13 +21,13 @@ Note: This Guide is intended to provide a survey of the field: it does not cover
 
 ### Data
 
-Broadly speaking, the Census Bureau can be viewed as publishing two types of data: demographic and geographic.
+Broadly speaking, the Census Bureau publishes two types of data: demographic and geographic.
 
 #### Demographic Data
 
-The core mission of the Census Bureau is to provide information about America's people, places and economy. It does this by running over 100 Censuses, Surveys and Programs. You can view the full list of programs [here](https://www.census.gov/programs-surveys/surveys-programs.html).
+The mission of the Census Bureau is to provide information about America's people, places and economy. It does this by running over 100 Censuses, Surveys and Programs. You can view the full list of programs [here](https://www.census.gov/programs-surveys/surveys-programs.html).
 
-It is beyond the scope of this Guide to detail each of these datasets. Instead, below we describe the five most popular Census programs as measured by API requests.
+It is beyond the scope of this Guide to detail each of these datasets. Instead, below we describe the five most popular Census programs as measured by a sample of API requests. (The raw data of this sampling can be viewed [here](/training-resources/popular-datasets.md)).
 
 1. [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/). The ACS regularly gathers information previously contained only in the long form of the decennial census, such as ancestry, educational attainment, income, language proficiency, migration, disability, employment, and housing characteristics. These data are used by many public-sector, private-sector, and not-for-profit stakeholders to allocate funding, track shifting demographics, plan for emergencies, and learn about local communities. Sent to approximately 295,000 addresses monthly (or 3.5 million per year), it is the largest household survey that the Census Bureau administers.  (Source: [Wikipedia](https://en.wikipedia.org/wiki/American_Community_Survey)).
 
