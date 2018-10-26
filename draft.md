@@ -25,9 +25,9 @@ Broadly speaking, the Census Bureau can be viewed as publishing two types of dat
 
 #### Demographic Data
 
-The core mission of the Census Bureau is to provide information about America's people, places and economy. It does this by running over 100 Censuses, Surveys and Programs. This document refers to the output of these programs as "datasets". You can view the full list of datasets [here](https://www.census.gov/programs-surveys/surveys-programs.html).
+The core mission of the Census Bureau is to provide information about America's people, places and economy. It does this by running over 100 Censuses, Surveys and Programs. You can view the full list of programs [here](https://www.census.gov/programs-surveys/surveys-programs.html).
 
-Below we describe the five most popular datasets that Census publishes. In this case we used API requests as a measure of popularity.
+It is beyond the scope of this Guide to detail each of these datasets. Instead, below we describe the five most popular Census programs as measured by API requests.
 
 1. [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/). The ACS regularly gathers information previously contained only in the long form of the decennial census, such as ancestry, educational attainment, income, language proficiency, migration, disability, employment, and housing characteristics. These data are used by many public-sector, private-sector, and not-for-profit stakeholders to allocate funding, track shifting demographics, plan for emergencies, and learn about local communities. Sent to approximately 295,000 addresses monthly (or 3.5 million per year), it is the largest household survey that the Census Bureau administers.  (Source: [Wikipedia](https://en.wikipedia.org/wiki/American_Community_Survey)).
 
@@ -57,144 +57,59 @@ The primary tools that Census provides for accessing its data are American FactF
 
 #### American Fact Finder
 
-[American FactFinder (AFF)](https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml) is website that lets you:
-
-* **Community Facts** Will quickly show you facts about a region by simply entering its name.
-* **Guided Search** Walks you through a questionnaire that will lead you to a dataset which answers your question
-* **Advanced Search** Prompts you for a table ID / search term and geography, and then shows you all the data available.
-
-The result from each page will allow you to download the data as a CSV file.
+[American FactFinder (AFF)](https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml) is a web application that can help you navigate the various datasets that Census publishes and find the information that you are looking for. In addition to displaying results on the website, there is an option to download the results as a CSV file which you can then import into R.
 
 #### API
 
 The Census Bureau has an API which provides access to many of its datasets. You can learn more about the API, including which datasets are available, [here](https://www.census.gov/developers/).
 
+Using the API requires a getting an API Key, which you can get for free [here](https://api.census.gov/data/key_signup.html).
+
+The advantage of using the API
 Note that several R packages provide access to the API.
 
 
 ## Part 2: How CRAN Can Help
 
-<table>
-	<thead>
-		<tr>
-			<th>Package Name</th>
-			<th>Short Description</th>
-			<th>Long Description</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="https://cran.r-project.org/web/packages/acs/index.html">acs</a></td>
-			<td>Download, Manipulate, and Present American Community Survey and Decennial Data from the US Census</td>
-			<td>Provides a general toolkit for downloading, managing, analyzing, and presenting data from the U.S. Census (<https://www.census.gov/data/developers/data-sets.html>), including SF1 (Decennial short-form), SF3 (Decennial long-form), and the American Community Survey (ACS). Confidence intervals provided with ACS data are converted to standard errors to be bundled with estimates in complex acs objects. Package provides new methods to conduct standard operations on acs objects and present/plot data in statistically appropriate ways.
+CRAN (the Comprehensive R Archive Network) provides access to thousands of user contributed R packages. While compiling this guide we were able to identify 22 packages that were specifically designed to facilitate working with demographic or geographic Census data. Below are descriptions of the 7 most popular such packages:
 
-</td>
-		</tr>
-		<tr>
-			<td><a href="https://cran.r-project.org/web/packages/census/index.html">census</a></td>
-			<td>Scrape US Census Data</td>
-			<td>A scraper to collect US Census data from the American Community Survey (ACS) data and metadata. Available datasets include population, income, education and employment levels by age, sex and race. See <http://mcdc.missouri.edu/websas/caps10acsb.html> for more information. Unlike other census related packages, this package does not require a U.S. Census Bureau API.</td>
-		</tr>
-		<tr>
-			<td><a href="https://cran.r-project.org/web/packages/censusapi/index.html">censusapi</a></td>
-			<td>Retrieve Data from the Census APIs</td>
-			<td>A wrapper for the U.S. Census Bureau APIs that returns data frames of Census data and metadata. Available datasets include the Decennial Census, American Community Survey, Small Area Health Insurance Estimates, Small Area Income and Poverty Estimates, and Population Estimates and Projections. See <https://www.census.gov/data/developers/data-sets.html> for more information.</td>
-		</tr>
-		<tr>
-			<td><a href="https://cran.r-project.org/web/packages/censusGeography/index.html"> censusGeography</a></td>
-			<td>Changes United States Census Geographic Code into Name of Location</td>
-			<td>Converts the United States Census geographic code for city, state (FIP and ICP), region, and birthplace, into the name of the region. e.g. takes an input of Census city code 5330 to it's actual city, Philadelphia. Will return NA for code that doesn't correspond to real location.</td>
-		</tr>
-		<tr>
-			<td><a href="https://cran.r-project.org/web/packages/choroplethr/index.html">choroplethr</a></td>
-			<td>Simplify the Creation of Choropleth Maps in R</td>
-			<td>Choropleths are thematic maps where geographic regions, such as states, are colored according to some metric, such as the number of people who live in that state. This package simplifies this process by 1. Providing ready-made functions for creating choropleths of common maps. 2. Providing data and API connections to interesting data sources for making choropleths. 3. Providing a framework for creating choropleths from arbitrary shapefiles. 4. Overlaying those maps over reference maps from Google Maps.</td>
-		</tr>
-		<tr>
-			<td><a href="https://cran.r-project.org/web/packages/choroplethrMaps/index.html">choroplethrMaps</a></td>
-			<td>Contains Maps Used by the 'choroplethr' Package</td>
-			<td>Contains 3 maps. 1) US States 2) US Counties 3) Countries of the world.</td>
-		</tr>
-		<tr>
-			<td><a href="https://cran.r-project.org/web/packages/idbr/index.html"> idbr</a></td>
-			<td>R Interface to the US Census Bureau International Data Base API</td>
-			<td>Use R to make requests to the US Census Bureau's International Data Base API. Results are returned as R data frames. For more information about the IDB API, visit <http://www.census.gov/data/developers/data-sets/international-database.html>.</td>
-		</tr>
-		<tr>
-			<td><a href="https://cran.r-project.org/web/packages/noncensus/index.html">noncensus</a></td>
-			<td>U.S. Census Regional and Demographic Data</td>
-			<td>A collection of various regional information determined by the U.S. Census Bureau along with demographic data.</td>
-		</tr>
-		<tr>
-			<td><a href="https://cran.r-project.org/web/packages/SeerMapper/index.html"> SeerMapper </a></td>
-			<td>A Quick Way to Map U.S. Rates and Data of U. S. States, Counties, Census Tracts, or Seer Registries using 2000 and 2010 U. S. Census Boundaries</td>
-			<td>Provides an easy way to map seer registry area rate data on a U. S, map. The U. S. data may be mapped at the state, U. S. NCI Seer Register, state/county or census tract level. The function can categorize the data into "n" quantiles, where "n" is 3 to 11 or the caller can specify a cut point list for the categorizes. The caller can also provide the data and the comparison operation to request hatching over any areas. The default operation and value are > 0.05 (p-values). The location id provided in the data determines the geographic level of the mapping. If states, state/counties or census tracts are being mapped, the location ids used must be the U.S. FIPS codes for states (2 digits), state/counties (5 digits) or state/county/census tracts (11 digits). If the location id references the U.S. Seer Registry areas, the Seer Registry area identifier used to link the data to the geographical areas, then the location id is the Seer Registry name or abbreviation. Additional parameters are used to provide control over the drawing of the boundaries at the data's boundary level and higher levels. The package uses modified boundary data from the 2000 and 2010 U. S. Census to reduce the storage requirements and improve drawing speed. The 'SeerMapper' package contains the U. S. Census 2000 and 2010 boundary data for the regional, state, Seer Registry, and county levels. Six supplement packages contain the census tract boundary data (see manual for more details.)</td>
-		</tr>
-		<tr>
-			<td><a href="https://cran.r-project.org/web/packages/SeerMapper2010East/index.html"> SeerMapper2010East</a></td>
-			<td>Supplemental U. S. 2010 Census Tract Boundaries for 23 Eastern States without Registries for 'SeerMapper'</td>
-			<td>Provides supplemental 2010 census tract boundary package for 23 states without Seer Registries that are east of the Mississippi river for use with the 'SeerMapper' package. The data contained in this package is derived from U. S. Census data and is in public domain.</td>
-		</tr>
-		<tr>
-			<td><a href="https://cran.r-project.org/web/packages/SeerMapper2010Regs/index.html"> SeerMapper2010Regs</a></td>
-			<td>Supplemental U. S. 2010 Census Tract Boundaries for 15 States with Seer Registries for 'SeerMapper'</td>
-			<td>Provides supplemental 2010 census tract boundaries of the 15 states containing Seer Registries for use with the 'SeerMapper' package. The data contained in this package is derived from U. S. 2010 Census data and is in public domain.</td>
-		</tr>
-		<tr>
-			<td><a href="https://cran.r-project.org/web/packages/SeerMapper2010West/index.html"> SeerMapper2010West</a></td>
-			<td>Supplemental U.S. 2010 Census Tract Boundaries for 14 Western States without Seer Registries for 'SeerMapper'
-</td>
-			<td>Provides supplemental 2010 census tract boundaries for the 14 states without Seer Registries that are west of the Mississippi river for use with the 'SeerMapper' package. The data contained in this package is derived from U. S. 2010 Census data and is in public domain.</td>
-		</tr>
-		<tr>
-			<td><a href="https://cran.r-project.org/web/packages/SeerMapperEast/index.html"> SeerMapperEast</a></td>
-			<td>Supplemental U. S. 2000 Census Tract Boundaries for 23 Eastern States without Seer Registries</td>
-			<td>Provides supplemental 2000 census tract boundaries for the 14 states without Seer Registries that are west of the Mississippi river for use with the 'SeerMapper' package. The data contained in this package is derived from U. S. Census data and is in the public domain.</td>
-		</tr>
-		<tr>
-			<td><a href="https://cran.r-project.org/web/packages/SeerMapperRegs/index.html"> SeerMapperRegs</a></td>
-			<td>Supplemental U. S. 2000 Census Tract Boundary for 15 States with Seer Registries for 'SeerMapper'</td>
-			<td>Provides supplemental 2000 census tract boundaries for the 15 states containing Seer Registries for use with the 'SeerMapper' package. The data contained in this package is derived from U. S. Census data and is in the public domain.</td>
-		</tr>
-		<tr>
-			<td><a href="https://cran.r-project.org/web/packages/SeerMapperWest/index.html">SeerMapperWest</a></td>
-			<td>Supplemental U.S. 2000 Census Tract Boundaries for 14 Western States without Seer Registries for 'SeerMapper'
-</td>
-			<td>Provides supplemental 2000 census tract boundaries for the 14 states without Seer Registries that are west of the Mississippi river for use with the 'SeerMapper' package. The data contained in this package is derived from U. S. Census data and is in the public domain.</td>
-		</tr>
-		<tr>
-			<td><a href="https://cran.r-project.org/web/packages/tidycensus/index.html"> tidycensus</a></td>
-			<td>Load US Census Boundary and Attribute Data as 'tidyverse' and 'sf'-Ready Data Frames
-</td>
-			<td>An integrated R interface to the decennial US Census and American Community Survey APIs and the US Census Bureau's geographic boundary files. Allows R users to return Census and ACS data as tidyverse-ready data frames, and optionally returns a list-column with feature geometry for many geographies.</td>
-		</tr>
-		<tr>
-			<td><a href="https://cran.r-project.org/web/packages/tigris/index.html"> tigris</a></td>
-			<td>Load Census TIGER/Line Shapefiles</td>
-			<td>Download TIGER/Line shapefiles from the United States Census Bureau (<https://www.census.gov/geo/maps-data/data/tiger-line.html>) and load into R as 'SpatialDataFrame' or 'sf' objects.</td>
-		</tr>
-		<tr>
-			<td><a href="https://cran.r-project.org/web/packages/totalcensus/index.html"> totalcensus</a></td>
-			<td>Extract High Resolution Census Data</td>
-			<td>Download summary files from Census Bureau <https://www2.census.gov/> and extract data, in particular high resolution data at block, block group, and tract level, from decennial census and American Community Survey 1-year and 5-year estimates.</td>
-		</tr>
-		<tr>
-			<td><a href="https://cran.r-project.org/web/packages/UScensus2000cdp/index.html"> UScensus2000cdp</a></td>
-			<td>US Census 2000 Designated Places Shapefiles and Additional Demographic Data</td>
-			<td>US Census 2000 Designated Places shapefiles and additional demographic data from the SF1 100 percent files. This data set contains polygon files in lat/lon coordinates and the corresponding demographic data for a number of different variables.</td>
-		</tr>
-		<tr>
-			<td><a href="https://cran.r-project.org/web/packages/UScensus2000tract/index.html"> UScensus2000tract</a></td>
-			<td>US Census 2000 Tract Level Shapefiles and Additional Demographic Data</td>
-			<td>US 2000 Census Tract shapefiles and additional demographic data from the SF1 100 percent files. This data set contains polygon files in lat/lon coordinates and the corresponding demographic data for a number of different variables.</td>
-		</tr>
-		<tr>
-			<td><a href="https://cran.r-project.org/web/packages/UScensus2010/index.html"> UScensus2010</a></td>
-			<td>US Census 2010 Suite of R Packages</td>
-			<td>US Census 2010 shape files and additional demographic data from the SF1 100 percent files. This package contains a number of helper functions for the UScensus2010blk, UScensus2010blkgrp, UScensus2010tract, UScensus2010cdp packages.</td>
-		</tr>
-	</tbody>
-</table>
+1. [tigris](https://cran.r-project.org/web/packages/tigris/index.html). Download TIGER/Line shapefiles from the United States Census Bureau (https://www.census.gov/geo/maps-data/data/tiger-line.html) and load into R as 'SpatialDataFrame' or 'sf' objects.
+
+2. [acs](https://cran.r-project.org/web/packages/acs/index.html). Provides a general toolkit for downloading, managing, analyzing, and presenting data from the U.S. Census (https://www.census.gov/data/developers/data-sets.html), including SF1 (Decennial short-form), SF3 (Decennial long-form), and the American Community Survey (ACS). Confidence intervals provided with ACS data are converted to standard errors to be bundled with estimates in complex acs objects. Package provides new methods to conduct standard operations on acs objects and present/plot data in statistically appropriate ways.
+
+3. [choroplethr](https://cran.r-project.org/web/packages/choroplethr/index.html). Choropleths are thematic maps where geographic regions, such as states, are colored according to some metric, such as the number of people who live in that state. This package simplifies this process by 1. Providing ready-made functions for creating choropleths of common maps. 2. Providing data and API connections to interesting data sources for making choropleths. 3. Providing a framework for creating choropleths from arbitrary shapefiles. 4. Overlaying those maps over reference maps from Google Maps.     
+
+4. [tidycensus](https://cran.r-project.org/web/packages/tidycensus/index.html). An integrated R interface to the decennial US Census and American Community Survey APIs and the US Census Bureau's geographic boundary files. Allows R users to return Census and ACS data as tidyverse-ready data frames, and optionally returns a list-column with feature geometry for many geographies.
+
+5. [choroplethrMaps](https://cran.r-project.org/web/packages/choroplethrMaps/index.html). Contains 3 maps. 1) US States 2) US Counties 3) Countries of the world.
+
+6. [censusapi](https://cran.r-project.org/web/packages/censusapi/index.html). A wrapper for the U.S. Census Bureau APIs that returns data frames of Census data and metadata. Available datasets include the Decennial Census, American Community Survey, Small Area Health Insurance Estimates, Small Area Income and Poverty Estimates, and Population Estimates and Projections. See https://www.census.gov/data/developers/data-sets.html for more information.
+
+7. [ipumsr](https://cran.r-project.org/web/packages/ipumsr/index.html). The ipumsr package assists in the import and use of IPUMS extracts in R. IPUMS
+data is a repackaging of census and survey data from around the world to a
+format harmonized across space and time and with enhanced
+documentation. With IPUMS data, it easy to study change, conduct comparative
+research, merge information across data types, and analyze individuals within
+family and community context. Users can go to the
+[IPUMS website](https://usa.ipums.org) and create an extract with only the
+samples and variables they are interested in, and then import their downloaded
+extract with the ipumsr package. Work has begun on an API for IPUMS data, but
+it is not known when it will be available.
+
+ Several IPUMS projects include data from the US Census Bureau:
+
+ - [IPUMS USA](https://usa.ipums.org) repackages the public use microdata from
+the US Census and American Community Survey from 1850 to the present.
+ - [NHGIS](https://nhgis.org) provides population, housing, agricultural,
+and economic data, along with GIS-compatible boundary files, for geographic
+units in the United States from 1790 to the present.
+ - [IPUMS CPS](https://cps.ipums.org) provides the Current Population Survey
+which is a monthly workforce survey conducted by the Census Bureau.
+ - [IPUMS International](https://international.ipums.org) includes the
+US Census microdata in the same format as census data from 93 other
+countries.
+
+You can view the entire list of 22 CRAN packages designed to work with Census data [ADD LINK HERE]().
 
 ## Part 3: Learning More
 
