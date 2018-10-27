@@ -27,7 +27,7 @@ Broadly speaking, the Census Bureau publishes two types of data: demographic and
 
 The mission of the Census Bureau is to provide information about America's people, places and economy. It does this by running over 100 Censuses, Surveys and Programs. You can view the full list of programs [here](https://www.census.gov/programs-surveys/surveys-programs.html).
 
-It is beyond the scope of this Guide to detail each of these datasets. Instead, below we describe the five most popular Census programs as measured by a sample of API requests. (The raw data of this sampling can be viewed [here](/training-resources/popular-datasets.md)).
+It is beyond the scope of this document to to detail each of these 100+ datasets. Instead, below we describe the five most popular Census programs as measured by a sample of API requests. (The raw data of this sampling can be viewed [here](/training-resources/popular-datasets.md)).
 
 1. [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/). The ACS regularly gathers information previously contained only in the long form of the decennial census, such as ancestry, educational attainment, income, language proficiency, migration, disability, employment, and housing characteristics. These data are used by many public-sector, private-sector, and not-for-profit stakeholders to allocate funding, track shifting demographics, plan for emergencies, and learn about local communities. Sent to approximately 295,000 addresses monthly (or 3.5 million per year), it is the largest household survey that the Census Bureau administers.  (Source: [Wikipedia](https://en.wikipedia.org/wiki/American_Community_Survey)).
 
@@ -44,16 +44,19 @@ It is beyond the scope of this Guide to detail each of these datasets. Instead, 
 
 Geography is a central concept to the Census Bureau. Statistics are normally reported for either the entire nation, or some specific geographic subdivision of the country.
 
-As the diagram below shows, the Census Bureau has a very complex view of Geography. While most Americans know the name of the state and county that they live in, very few can name the tract or block that they live in!
+Most Americans can name the State, County and ZIP Code that they live in. But as the diagram below shows, the Census Bureau's geographic hierarchy is much more complex than that!
 ![Census Geo](census-geo.png) (Source: [Standard Hierarchy of Census Geographic Entities](https://www2.census.gov/geo/pdfs/reference/geodiagram.pdf))
 
 Census provides free access to its geographic data and products such as the TIGER/Line Shapefiles, KMLs, TIGERweb, cartographic boundary files, geographic relationship files, and reference and thematic maps. You can access this data [here](https://www.census.gov/geography.html).
 
-Note: not every demographic dataset provides data at every geographic level. For example, the Decennial Census publishes data down to Block level. But the American Community Survey only publishes data down to the Block Group level. And the Population Estimates Program only publishes data down to the county level.
+Note that not most datasets provide data at only a subset of geographies. For example:
+ * The Decennial Census publishes data down to Block level (the smallest geography).
+ * The American Community Survey (ACS) publishes data down to the Block Group level (the level above Blocks).
+ * The Population Estimates Program (PEP) only publishes data down to the county level (two levels above the Block Group level).
 
 ### Data Dissemination
 
-The primary tools that Census provides for accessing its data are American FactFinder and its API.
+The primary tools that Census provides for accessing its data are American FactFinder and an API.
 
 #### American Fact Finder
 
@@ -65,13 +68,11 @@ The Census Bureau has an API which provides access to many of its datasets. You 
 
 Using the API requires a getting an API Key, which you can get for free [here](https://api.census.gov/data/key_signup.html).
 
-The advantage of using the API
-Note that several R packages provide access to the API.
-
+Note that several R packages (described below) facilitate access to the Census API from R.
 
 ## Part 2: How CRAN Can Help
 
-CRAN (the Comprehensive R Archive Network) provides access to thousands of user contributed R packages. While compiling this guide we were able to identify 22 packages that were specifically designed to facilitate working with demographic or geographic Census data. Below are descriptions of the 7 most popular such packages:
+CRAN (the Comprehensive R Archive Network) provides access to thousands of user contributed R packages. While compiling this guide we were able to identify 22 of those packages that were specifically designed to facilitate working with US Census data. Below are descriptions of the 7 most popular such packages:
 
 1. [tigris](https://cran.r-project.org/web/packages/tigris/index.html). Download TIGER/Line shapefiles from the United States Census Bureau (https://www.census.gov/geo/maps-data/data/tiger-line.html) and load into R as 'SpatialDataFrame' or 'sf' objects.
 
@@ -109,7 +110,7 @@ which is a monthly workforce survey conducted by the Census Bureau.
 US Census microdata in the same format as census data from 93 other
 countries.
 
-You can view the entire list of 22 CRAN packages designed to work with Census data [ADD LINK HERE]().
+You can view the entire list of 22 CRAN packages we identified as designed to facilitate working with US Census Data [ADD LINK HERE](). You can review our methodology for deciding which packages to include in the main part of the Guide [ADD LINK HERE]().
 
 ## Part 3: Learning More
 
