@@ -1,7 +1,6 @@
 # <span style="color: red">DRAFT</span>
-# A Guide to Working with U.S. Census Data in R
-#### Written by Ari Lamstein and Logan Powell, October 2018
-#### Sponsored by the R Consortium as part of the R Consortium Census Working Group
+# Written by Ari Lamstein and Logan Powell, October 2018
+## Sponsored by the R Consortium as part of the R Consortium Census Working Group
 
 The U.S. Census Bureau is the premier source of data about America's people, places and economy. This makes the Bureau a natural source of information for data analysts. R programmers who start working with Census Data, however, often run into two problems:
 
