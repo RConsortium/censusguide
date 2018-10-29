@@ -1,5 +1,5 @@
 # <span style="color: red">DRAFT</span>
-## Written by Ari Lamstein and Logan Powell, October 2018
+## Written by Ari Lamstein and Logan Powell
 ### Sponsored by the R Consortium as part of the R Consortium Census Working Group
 
 The U.S. Census Bureau is the premier source of data about America's people, places and economy. This makes the Bureau a natural source of information for data analysts. R programmers who start working with Census Data, however, often run into two problems:
@@ -14,7 +14,7 @@ This document aims to help R programmers who are confronted with these  problems
 * [Part 2: How CRAN Can Help](#part-2-how-cran-can-help)
 * [Part 3: Learning More](#part-3-learning-more)
 
-Note: This Guide is intended to provide a survey of the field: it does not cover every dataset which Census publishes, nor every Census-related package which is on CRAN.
+Note: This Guide is intended to provide an introduction to the field: it does not cover every dataset which Census publishes, nor every Census-related package which is on CRAN.
 
 ## Part 1: What the Census Bureau Provides
 
@@ -24,7 +24,7 @@ Broadly speaking, the Census Bureau publishes two types of data: demographic and
 
 #### Demographic Data
 
-The mission of the Census Bureau is to provide information about America's people, places and economy. It does this by running over 100 Censuses, Surveys and Programs. You can view the full list of programs [here](https://www.census.gov/programs-surveys/surveys-programs.html).
+The Census Bureau conducts over 100 Censuses, Surveys and Programs. You can view the full list of programs [here](https://www.census.gov/programs-surveys/surveys-programs.html).
 
 It is beyond the scope of this document to to detail each of these 100+ datasets. Instead, below we describe the five most popular Census programs as measured by a sample of API requests. (The raw data of this sampling can be viewed [here](/training-resources/popular-datasets.md)).
 
@@ -46,12 +46,12 @@ Geography is a central concept to the Census Bureau. Statistics are normally rep
 Most Americans can name the State, County and ZIP Code that they live in. But as the diagram below shows, the Census Bureau's geographic hierarchy is much more complex than that!
 ![Census Geo](census-geo.png) (Source: [Standard Hierarchy of Census Geographic Entities](https://www2.census.gov/geo/pdfs/reference/geodiagram.pdf))
 
-Census provides free access to its geographic data and products such as the TIGER/Line Shapefiles, KMLs, TIGERweb, cartographic boundary files, geographic relationship files, and reference and thematic maps. You can access this data [here](https://www.census.gov/geography.html).
-
-Note that not most datasets provide data at only a subset of geographies. For example:
+Note that most datasets provide data for only a subset of these geographies. For example:
  * The Decennial Census publishes data down to Block level (the smallest geography).
  * The American Community Survey (ACS) publishes data down to the Block Group level (the level above Blocks).
  * The Population Estimates Program (PEP) only publishes data down to the county level (two levels above the Block Group level).
+
+Census provides free access to its geographic data and products such as the TIGER/Line Shapefiles, KMLs, TIGERweb, cartographic boundary files, geographic relationship files, and reference and thematic maps. You can access this data [here](https://www.census.gov/geography.html).
 
 ### Data Dissemination
 
@@ -113,43 +113,10 @@ You can view the entire list of 22 CRAN packages we identified as designed to fa
 
 ## Part 3: Learning More
 
-The Census Bureau has many resources for learning how to work with datasets they publish.
+The main Census training website can be found [here](https://www.census.gov/data/training-workshop). There you will find information about upcoming webinars, as well as recordings of past webinars.
 
-### Training website: https://www.census.gov/data/training-workshops.html
+The Census Bureau also runs a free [Slack Community](https://join.slack.com/t/uscensusbureau/shared_invite/enQtMjQ3NzUyNTM3NDU3LTZmNGI1MmQzY2Y2ZTU1ODJhNDQwMmY2YmZiNmFkNzg4YmJkYmQzZjQyNDhkNDYxN2JhYjkxZDEwMGI2OGU5NzQ) where you can ask questions and have them answered in real time. The community even has a channel (#r) specifically for R users!
 
-#### Upcoming Trainings
-
-For upcoming trainings provided/offered by the Census Bureau and Partners can be found [online](https://www.census.gov/data/training-workshops/trainings.html)
-
-#### Recorded Webinars
-
-You can peruse trainings that have been held in the past and were recorded by going to the [recorded webinars](https://www.census.gov/data/training-workshops/recorded-webinars.html) area.
-
-In addition, there are more tactical ["How-To Vides"](https://www.census.gov/data/training-workshops/video.html) created for public use.
-
-#### Training Brochures
-
-If you're interested in getting a high-level overview of topic-based trainings offered by the Bureau, you can find those [online](https://www.census.gov/data/training-workshops/training-resources.html) as well.
-
-#### Community and Contacts
-
-For R-users, there is a special #r channel at the Census Bureau's [Slack Community](https://join.slack.com/t/uscensusbureau/shared_invite/enQtMjQ3NzUyNTM3NDU3LTZmNGI1MmQzY2Y2ZTU1ODJhNDQwMmY2YmZiNmFkNzg4YmJkYmQzZjQyNDhkNDYxN2JhYjkxZDEwMGI2OGU5NzQ). Sign up and check it out!
-
-If there are specific training needs your group requires that aren't covered by any of the above resources, feel free to get in touch with the Training Branch directly:
-
-##### Education and Training Branch
-###### Customer Liaison and Marketing Services Office
-- Phone Number: 301-763-4308
-- Email: clmso.training@census.gov
-
-If you have a community of users for whom you would like an in-person training session (e.g., an R-users meetup), you can make such group-requests to:
-
-##### Data Dissemination Staff
+If you have any additional questions, please contact the Data Dissemination Staff at Census:
 - Phone: 1-844-ASK-DATA
 - Email: census.askdata@census.gov
-##### Training Request
-To request training please email us at: clmso.training@census.gov.
-
-We appreciate customers allowing approximately two weeks for requests.
-
-Not sure who to contact? [Ask a question](https://ask.census.gov/)
