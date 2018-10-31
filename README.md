@@ -26,7 +26,7 @@ Broadly speaking, the Census Bureau publishes two types of data: demographic and
 
 The Census Bureau conducts over 100 Censuses, Surveys and Programs. You can view the full list of programs [here](https://www.census.gov/programs-surveys/surveys-programs.html).
 
-It is beyond the scope of this document to to detail each of these 100+ datasets. Instead, below we describe the five most popular Census programs as measured by a sample of API requests. (The raw data of this sampling can be viewed [here](/training-resources/popular-datasets.md)).
+It is beyond the scope of this document to detail each of these 100+ datasets. Instead, below we describe the five most popular Census programs as measured by a sample of API requests. (The raw data of this sampling can be viewed [here](/training-resources/popular-datasets.md)).
 
 1. [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/). The ACS regularly gathers information previously contained only in the long form of the decennial census, such as ancestry, educational attainment, income, language proficiency, migration, disability, employment, and housing characteristics. These data are used by many public-sector, private-sector, and not-for-profit stakeholders to allocate funding, track shifting demographics, plan for emergencies, and learn about local communities. Sent to approximately 295,000 addresses monthly (or 3.5 million per year), it is the largest household survey that the Census Bureau administers.  (Source: [Wikipedia](https://en.wikipedia.org/wiki/American_Community_Survey)).
 
@@ -69,7 +69,9 @@ Using the API requires a getting an API Key, which you can get for free [here](h
 
 ## Part 2: How CRAN Can Help
 
-CRAN (the Comprehensive R Archive Network) provides access to thousands of user contributed R packages. While compiling this guide we were able to identify 22 of those packages that were specifically designed to facilitate working with US Census data. Below are descriptions of the 7 most popular such packages:
+CRAN (the Comprehensive R Archive Network) provides access to thousands of user contributed R packages. While compiling this guide we were able to identify 22 of those packages that were specifically designed to facilitate working with US Census data. You can view the full list of packages [ADD LINK HERE]().
+
+Below are descriptions of 7 packages which we believe are worth highlighting in this Guide. You can learn about our methodology for deciding which packages to highlight [ADD LINK HERE]().
 
 1. [tigris](https://cran.r-project.org/web/packages/tigris/index.html). Download TIGER/Line shapefiles from the United States Census Bureau (https://www.census.gov/geo/maps-data/data/tiger-line.html) and load into R as 'SpatialDataFrame' or 'sf' objects.
 
