@@ -12,7 +12,7 @@ This document aims to help R programmers who are confronted with these  problems
 
 * [Part 1: What the Census Bureau Provides](#part-1-what-the-census-bureau-provides)
 * [Part 2: How CRAN Can Help](#part-2-how-cran-can-help)
-* [Part 3: Learning More](#part-3-learning-more)
+* [Part 3: How to Learn More](#part-3-how-to-learn-more)
 
 Note: This Guide is intended to provide an introduction to the field: it does not cover every dataset which Census publishes, nor every Census-related package which is on CRAN.
 
@@ -55,7 +55,7 @@ Census provides free access to its geographic data and products such as the TIGE
 
 ### Data Dissemination
 
-The primary tools that Census provides for accessing its data are American FactFinder and an API.
+The primary tools that Census provides for accessing its data are American FactFinder and their API.
 
 #### American Fact Finder
 
@@ -67,8 +67,6 @@ The Census Bureau has an API which provides access to many of its datasets. You 
 
 Using the API requires a getting an API Key, which you can get for free [here](https://api.census.gov/data/key_signup.html).
 
-Note that several R packages (described below) facilitate access to the Census API from R.
-
 ## Part 2: How CRAN Can Help
 
 CRAN (the Comprehensive R Archive Network) provides access to thousands of user contributed R packages. While compiling this guide we were able to identify 22 of those packages that were specifically designed to facilitate working with US Census data. Below are descriptions of the 7 most popular such packages:
@@ -77,11 +75,16 @@ CRAN (the Comprehensive R Archive Network) provides access to thousands of user 
 
 2. [acs](https://cran.r-project.org/web/packages/acs/index.html). Provides a general toolkit for downloading, managing, analyzing, and presenting data from the U.S. Census (https://www.census.gov/data/developers/data-sets.html), including SF1 (Decennial short-form), SF3 (Decennial long-form), and the American Community Survey (ACS). Confidence intervals provided with ACS data are converted to standard errors to be bundled with estimates in complex acs objects. Package provides new methods to conduct standard operations on acs objects and present/plot data in statistically appropriate ways.
 
-3. [choroplethr](https://cran.r-project.org/web/packages/choroplethr/index.html). Choropleths are thematic maps where geographic regions, such as states, are colored according to some metric, such as the number of people who live in that state. This package simplifies this process by 1. Providing ready-made functions for creating choropleths of common maps. 2. Providing data and API connections to interesting data sources for making choropleths. 3. Providing a framework for creating choropleths from arbitrary shapefiles. 4. Overlaying those maps over reference maps from Google Maps.     
+3. [choroplethr](https://cran.r-project.org/web/packages/choroplethr/index.html). Choroplethr facilitates creating choropleth maps of data at the State, County and Tract level. Choropleths are thematic maps where geographic regions, such as states, are colored according to some metric, such as the number of people who live in that state. In addition to being a general purpose mapping package, choroplethr provides native support for mapping data from the American Community Survey (ACS).
+
+ You can learn more about choroplethr at [Choroplethr.com](https://www.choroplethr.com).
+
 
 4. [tidycensus](https://cran.r-project.org/web/packages/tidycensus/index.html). An integrated R interface to the decennial US Census and American Community Survey APIs and the US Census Bureau's geographic boundary files. Allows R users to return Census and ACS data as tidyverse-ready data frames, and optionally returns a list-column with feature geometry for many geographies.
 
-5. [choroplethrMaps](https://cran.r-project.org/web/packages/choroplethrMaps/index.html). Contains 3 maps. 1) US States 2) US Counties 3) Countries of the world.
+5. [choroplethrMaps](https://cran.r-project.org/web/packages/choroplethrMaps/index.html). choroplethrMaps contains the Census Bureau's 2010 US State Map (see `?state.map`) and 2010 US County Map (see `?county.map`). These maps were modified in order to make them easier to render (for example, islands off the coast of Alaska that cross the antimeridian were removed).
+
+ Additional metadata about these maps can be found in `?state.regions` and `?county.regions`.
 
 6. [censusapi](https://cran.r-project.org/web/packages/censusapi/index.html). A wrapper for the U.S. Census Bureau APIs that returns data frames of Census data and metadata. Available datasets include the Decennial Census, American Community Survey, Small Area Health Insurance Estimates, Small Area Income and Poverty Estimates, and Population Estimates and Projections. See https://www.census.gov/data/developers/data-sets.html for more information.
 
@@ -111,12 +114,22 @@ countries.
 
 You can view the entire list of 22 CRAN packages we identified as designed to facilitate working with US Census Data [ADD LINK HERE](). You can review our methodology for deciding which packages to include in the main part of the Guide [ADD LINK HERE]().
 
-## Part 3: Learning More
+## Part 3: How to Learn More
 
-The main Census training website can be found [here](https://www.census.gov/data/training-workshop). There you will find information about upcoming webinars, as well as recordings of past webinars.
+### Census Bureau
+
+The Census Bureau's latest training initiative is [Census Academy](https://www.census.gov/academy), which contains free courses to teach you how to use Census data. Census Academy also has a [free newsletter](https://public.govdelivery.com/accounts/USCENSUS/subscriber/new?topic_id=USCENSUS_11971) which will notify you when they release new courses.
+
+The main Census [Training & Workshops page](https://www.census.gov/data/training-workshops.html) has a library of recorded webinars, training resources, how-to videos as well as information on classroom training.
 
 The Census Bureau also runs a free [Slack Community](https://join.slack.com/t/uscensusbureau/shared_invite/enQtMjQ3NzUyNTM3NDU3LTZmNGI1MmQzY2Y2ZTU1ODJhNDQwMmY2YmZiNmFkNzg4YmJkYmQzZjQyNDhkNDYxN2JhYjkxZDEwMGI2OGU5NzQ) where you can ask questions and have them answered in real time. The community even has a channel (#r) specifically for R users!
 
 If you have any additional questions, please contact the Data Dissemination Staff at Census:
 - Phone: 1-844-ASK-DATA
 - Email: census.askdata@census.gov
+
+### R Packages
+
+If you have a specific question about an R package you are using, the best resource is normally the package maintainer. The CRAN page for each R package contains the email address of a Maintainer.
+
+If you have a more general R question, or if you are unable to contact the package maintainer, then you might try asking your question on StackOverflow using the R tag ([link](https://stackoverflow.com/tags/r)).
