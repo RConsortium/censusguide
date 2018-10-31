@@ -83,7 +83,7 @@ CRAN (the Comprehensive R Archive Network) provides access to thousands of user 
 
 5. [choroplethrMaps](https://cran.r-project.org/web/packages/choroplethrMaps/index.html). choroplethrMaps contains the Census Bureau's 2010 US State Map (see `?state.map`) and 2010 US County Map (see `?county.map`). These maps were modified in order to make them easier to render (for example, islands off the coast of Alaska that cross the antimeridian were removed).
 
- Additional metadata about these maps can be found in `?state.regions` and `?county.regions`.
+    Additional metadata about these maps can be found in `?state.regions` and `?county.regions`.
 
 6. [censusapi](https://cran.r-project.org/web/packages/censusapi/index.html). A wrapper for the U.S. Census Bureau APIs that returns data frames of Census data and metadata. Available datasets include the Decennial Census, American Community Survey, Small Area Health Insurance Estimates, Small Area Income and Poverty Estimates, and Population Estimates and Projections. See https://www.census.gov/data/developers/data-sets.html for more information.
 
@@ -100,16 +100,11 @@ it is not known when it will be available.
 
     Several IPUMS projects include data from the US Census Bureau:
 
- - [IPUMS USA](https://usa.ipums.org) repackages the public use microdata from
-the US Census and American Community Survey from 1850 to the present.
- - [NHGIS](https://nhgis.org) provides population, housing, agricultural,
-and economic data, along with GIS-compatible boundary files, for geographic
-units in the United States from 1790 to the present.
- - [IPUMS CPS](https://cps.ipums.org) provides the Current Population Survey
+     - [IPUMS USA](https://usa.ipums.org) repackages the public use microdata from the US Census and American Community Survey from 1850 to the present.
+     - [NHGIS](https://nhgis.org) provides population, housing, agricultural, and economic data, along with GIS-compatible boundary files, for geographic units in the United States from 1790 to the present.
+     - [IPUMS CPS](https://cps.ipums.org) provides the Current Population Survey
 which is a monthly workforce survey conducted by the Census Bureau.
- - [IPUMS International](https://international.ipums.org) includes the
-US Census microdata in the same format as census data from 93 other
-countries.
+     - [IPUMS International](https://international.ipums.org) includes the US Census microdata in the same format as census data from 93 other countries.
 
 You can view the entire list of 22 CRAN packages we identified as designed to facilitate working with US Census Data [ADD LINK HERE](). You can review our methodology for deciding which packages to include in the main part of the Guide [ADD LINK HERE]().
 
