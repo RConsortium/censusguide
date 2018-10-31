@@ -69,7 +69,7 @@ Using the API requires a getting an API Key, which you can get for free [here](h
 
 ## Part 2: How CRAN Can Help
 
-CRAN (the Comprehensive R Archive Network) provides access to thousands of user contributed R packages. While compiling this guide we were able to identify 22 of those packages that were specifically designed to facilitate working with US Census data. You can view the full list of packages [ADD LINK HERE]().
+CRAN (the Comprehensive R Archive Network) provides access to thousands of user contributed R packages. While compiling this guide we were able to identify 22 of those packages that were specifically designed to facilitate working with US Census data. You can view the full list of packages [here](https://rconsortium.github.io/censusguide/r-packages.html).
 
 Below are descriptions of 7 packages which we believe are worth highlighting in this Guide. You can learn about our methodology for deciding which packages to highlight [ADD LINK HERE]().
 
