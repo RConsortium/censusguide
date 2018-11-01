@@ -1,4 +1,3 @@
-# <span style="color: red">DRAFT</span>
 ## Written by Ari Lamstein and Logan Powell
 ### Sponsored by the R Consortium as part of the R Consortium Census Working Group
 
