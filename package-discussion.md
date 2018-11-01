@@ -1,17 +1,17 @@
 We identified 22 R packages on CRAN that deal with US Census data. Since the
 Guide is intended to be a brief introduction to the field, we felt that simply
-listing these packages in alphabetical order, along with a brief description, might not provide the best value to reader. In particular, we were concerned that it might overwhelm readers and not provide sufficient guidance.
+listing these packages in alphabetical order, along with a brief description, might not provide the best value to readers. In particular, we were concerned that it might overwhelm readers and not provide sufficient guidance.
 
 In the end we decided to:
 
 1. Include a list of the five most popular packages in the main text of the Guide. Sort this list by the number of downloads each package had in the last year.
-1. Include additional packages in this list which have important functionality that is not present in the five most popular packages.
-1. Describe these packages using their CRAN descriptions. Allow the package authors to modify these descriptions.
+1. Include additional packages which have important functionality that is not present in the original list.
+1. Default to describing these packages as CRAN does. Allow package authors to modify these descriptions.
 1. List all 22 packages in a separate page.
 
 ## Measuring Package Popularity
 
-In order to determine which packages in our list had the most downloads, we wrote this script:
+We used the following script to determine packages had the most downloads:
 ```
 library(cranlogs)
 library(tidyverse)
@@ -90,28 +90,27 @@ This data shows that some packages in our list are much more popular than others
 At this point we considered listing only the five most popular packages
 in the main page of the Guide. This would
 mirror how the Guide treats the 100+ programs that Census conducts. There we
-include only the five most popular programs in the main body of the text, and include a link to the full list of programs in a separate page.
+include only the five most popular programs in the main body of the text. But we also include a link to a separate page that lists all of the programs.
 
 ## Exploring Package Functionality
 
-The problem with only looking at package popularity is that we felt that some packages outside of that list had important functionality that was simply not present in the most popular packages.
+The problem with only looking at package popularity is that some of the less popular packages include important functionality. In particular, we felt it was important to include the `censusapi` and `ipumsr` packages for the following reasons:
 
-In particular, we wanted to include the `censusapi` and `ipumsr` packages for the following reasons:
-
-1. `censusapi` aims to provide access to the entirety of the Census Bureau's API. We felt that awareness of this package is important when discussing how R's package ecosystem facilitates working with the US Census Bureau. While most of the packages already in the list provide access to parts of the Census Bureau's API, none of them aim to provide access to all of the API.
-2. `ipumsr` facilitates working with data from Integrated Public Use Microdata Series (IPUMS). IPUMS is the world's largest individual-level population database, and is an important resource in the US Census ecosystem. None of the five most popular packages in our list provides this functionality.
+1. `censusapi` aims to provide access to the entirety of the Census Bureau's API. We felt that awareness of this package is important when discussing how R's package ecosystem facilitates working with the US Census Bureau. While most of the packages in the list already provided access to parts of the Census Bureau's API, none of them provide access to all of it.
+2. `ipumsr` facilitates working with data from IPUMS (Integrated Public Use Microdata Series. IPUMS is the world's largest individual-level population database, and is an important resource in the US Census ecosystem. None of the five most popular packages in our list provides this functionality.
 
 ## Describing Packages
 
-In the original draft of this Guide we copied the package descriptions which appear on CRAN verbatim. However, we were concerned that those descriptions might be too sparse. So we invited the package authors to, if they wish, modify the descriptions.
+In the original draft of this Guide we copied the package descriptions which appear on CRAN verbatim. However, we were concerned that those descriptions might be too sparse. So we invited the package authors to modify the descriptions.
 
-As an example of this difference, here is how the `ipumsr` package is describe on CRAN:
+As an example of this difference, here is how the `ipumsr` package is
+described on CRAN:
 
 > ipumsr: Read 'IPUMS' Extract Files
 
 > An easy way to import census, survey and geographic data provided by 'IPUMS' into R plus tools to help use the associated metadata to make analysis easier. 'IPUMS' data describing 1.4 billion individuals drawn from over 750 censuses and surveys is available free of charge from our website <https://ipums.org>.
 
-And here is how the same package author decided to describe the package in the Guide:
+And here is how package is described in the Guide:
 
 > [ipumsr](https://cran.r-project.org/web/packages/ipumsr/index.html). The ipumsr package assists in the import and use of IPUMS extracts in R. IPUMS
 data is a repackaging of census and survey data from around the world to a
