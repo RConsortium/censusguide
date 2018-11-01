@@ -2,12 +2,12 @@ We identified 22 R packages on CRAN that deal with US Census data. Since the
 Guide is intended to be a brief introduction to the field, we felt that simply
 listing these packages in alphabetical order, along with a brief description, might not provide the best value to reader. In particular, we were concerned that it might overwhelm readers and not provide sufficient guidance.
 
-Our final decision was to:
+In the end we decided to:
 
-1. Include a list of the most popular packages, in rank order, in the main text of the Guide.
-1. Include additional packages in that list which we felt had important functionality that had the potential to be of widespread interest to readers.
-1. Provide a default description of those packages using their CRAN descriptions. Allow package authors to modify these descriptions.
-1. Include a separate page that lists all 22 packages, in alphabetical order, along with their CRAN descriptions.
+1. Include a list of the five most popular packages in the main text of the Guide. Sort this list by the number of downloads each package had in the last year.
+1. Include additional packages in this list which have important functionality that is not present in the five most popular packages.
+1. Describe these packages using their CRAN descriptions. Allow the package authors to modify these descriptions.
+1. List all 22 packages in a separate page.
 
 ## Measuring Package Popularity
 
@@ -85,21 +85,21 @@ The script gives us the following output:
 # 22 SeerMapper2010West             1468       1
 ```
 
-This data shows that some packages in our list are much more popular than others.
+This data shows that some packages in our list are much more popular than others. Additionally, popularity decreasing sharply.
 
 At this point we considered listing only the five most popular packages
 in the main page of the Guide. This would
-mirror how the Guide treats the 100+ programs that Census conducts: there we
-include only the five most popular programs, and include a link to the full list of programs in a separate page.
+mirror how the Guide treats the 100+ programs that Census conducts. There we
+include only the five most popular programs in the main body of the text, and include a link to the full list of programs in a separate page.
 
 ## Exploring Package Functionality
 
-The problem with only looking at package popularity is that we felt that some packages outside of that list had unique, important functionality that was simply not present in the most popular packages.
+The problem with only looking at package popularity is that we felt that some packages outside of that list had important functionality that was simply not present in the most popular packages.
 
 In particular, we wanted to include the `censusapi` and `ipumsr` packages for the following reasons:
 
-1. `censusapi` aims to provide access to the entirety of the Census Bureau's [API](https://www.census.gov/developers/). We feel that raising awareness of this package is important in a discussion of exploring how R's package ecosystem facilitates working with the US Census Bureau. None of the five most popular packages in our list provides this functionality.
-2. `ipumsr` facilitates working with data from [IPUMS](https://www.ipums.org/). IPUMS is an important resource in the US Census ecosystem. None of the five most popular packages in our list provides this functionality.
+1. `censusapi` aims to provide access to the entirety of the Census Bureau's API. We felt that awareness of this package is important when discussing how R's package ecosystem facilitates working with the US Census Bureau. While most of the packages already in the list provide access to parts of the Census Bureau's API, none of them aim to provide access to all of the API.
+2. `ipumsr` facilitates working with data from Integrated Public Use Microdata Series (IPUMS). IPUMS is the world's largest individual-level population database, and is an important resource in the US Census ecosystem. None of the five most popular packages in our list provides this functionality.
 
 ## Describing Packages
 
