@@ -69,9 +69,17 @@ Using the API requires a getting an API Key, which you can get for free [here](h
 
 ## Part 2: How CRAN Can Help
 
-CRAN (the Comprehensive R Archive Network) provides access to thousands of user contributed R packages. While compiling this guide we were able to identify 22 of those packages that were specifically designed to facilitate working with US Census data. You can view the full list of packages [here](https://rconsortium.github.io/censusguide/r-packages-all.html).
+CRAN (the Comprehensive R Archive Network) provides access to thousands of user
+contributed R packages. While compiling this guide we were able to identify 22
+of those packages that were specifically designed to facilitate working with US
+Census data. You can view the full list of packages
+[here](https://rconsortium.github.io/censusguide/r-packages-all.html).
 
-Below are descriptions of seven of those packages which we believe are likely to be of special interest to people starting their first project using R to work with Census data. You can learn about our methodology for deciding which packages to include in this discussion [here](https://rconsortium.github.io/censusguide/r-packages-all.html).
+Below are descriptions of seven of those packages which we believe are likely
+to be of special interest to people starting their first project using R to
+work with Census data. You can learn about our methodology for deciding which
+packages to include in this list
+[here](https://rconsortium.github.io/censusguide/package-discussion.html).
 
 1. [tigris](https://cran.r-project.org/web/packages/tigris/index.html). Download TIGER/Line shapefiles from the United States Census Bureau (https://www.census.gov/geo/maps-data/data/tiger-line.html) and load into R as 'SpatialDataFrame' or 'sf' objects.
 
