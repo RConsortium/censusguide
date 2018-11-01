@@ -1,4 +1,4 @@
-Below is the list of all 21 R packages on [CRAN](https://cran.r-project.org/) that we were able to identify as working with data from the US Census Bureau. They are presented in alphabetical order along with the descriptions as they appear on CRAN. Additionally, each package listed here has a link back to the original page on CRAN.
+Below is the list of all 22 R packages on [CRAN](https://cran.r-project.org/) that we were able to identify as working with data from the US Census Bureau. They are presented in alphabetical order along with the descriptions as they appear on CRAN. Additionally, each package listed here has a link back to the original page on CRAN.
 
 1. [acs](https://cran.r-project.org/web/packages/acs/index.html)
 
@@ -42,6 +42,12 @@ Below is the list of all 21 R packages on [CRAN](https://cran.r-project.org/) th
     _R Interface to the US Census Bureau International Data Base API_
 
     Use R to make requests to the US Census Bureau's International Data Base API. Results are returned as R data frames. For more information about the IDB API, visit <http://www.census.gov/data/developers/data-sets/international-database.html>.
+
+8. [ipumsr](https://cran.r-project.org/web/packages/ipumsr/index.html)
+
+   _Read 'IPUMS' Extract Files_
+
+   An easy way to import census, survey and geographic data provided by 'IPUMS' into R plus tools to help use the associated metadata to make analysis easier. 'IPUMS' data describing 1.4 billion individuals drawn from over 750 censuses and surveys is available free of charge from our website <https://ipums.org>.
 
 8. [noncensus](https://cran.r-project.org/web/packages/noncensus/index.html)
 

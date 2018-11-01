@@ -69,9 +69,9 @@ Using the API requires a getting an API Key, which you can get for free [here](h
 
 ## Part 2: How CRAN Can Help
 
-CRAN (the Comprehensive R Archive Network) provides access to thousands of user contributed R packages. While compiling this guide we were able to identify 22 of those packages that were specifically designed to facilitate working with US Census data. You can view the full list of packages [here](https://rconsortium.github.io/censusguide/r-packages.html).
+CRAN (the Comprehensive R Archive Network) provides access to thousands of user contributed R packages. While compiling this guide we were able to identify 22 of those packages that were specifically designed to facilitate working with US Census data. You can view the full list of packages [here](https://rconsortium.github.io/censusguide/r-packages-all.html).
 
-Below are descriptions of 7 packages which we believe are worth highlighting in this Guide. You can learn about our methodology for deciding which packages to highlight [ADD LINK HERE]().
+Below are descriptions of seven of those packages which we believe are likely to be of special interest to people starting their first project using R to work with Census data. You can learn about our methodology for deciding which packages to include in this discussion [here](https://rconsortium.github.io/censusguide/r-packages-all.html).
 
 1. [tigris](https://cran.r-project.org/web/packages/tigris/index.html). Download TIGER/Line shapefiles from the United States Census Bureau (https://www.census.gov/geo/maps-data/data/tiger-line.html) and load into R as 'SpatialDataFrame' or 'sf' objects.
 
@@ -108,15 +108,13 @@ it is not known when it will be available.
 which is a monthly workforce survey conducted by the Census Bureau.
      - [IPUMS International](https://international.ipums.org) includes the US Census microdata in the same format as census data from 93 other countries.
 
-You can view the entire list of 22 CRAN packages we identified as designed to facilitate working with US Census Data [ADD LINK HERE](). You can review our methodology for deciding which packages to include in the main part of the Guide [ADD LINK HERE]().
-
 ## Part 3: How to Learn More
 
 ### Census Bureau
 
-The Census Bureau's latest training initiative is [Census Academy](https://www.census.gov/academy), which contains free courses to teach you how to use Census data. Census Academy also has a [free newsletter](https://public.govdelivery.com/accounts/USCENSUS/subscriber/new?topic_id=USCENSUS_11971) which will notify you when they release new courses.
+The Census Bureau's latest training initiative is [Census Academy](https://www.census.gov/academy), which contains free courses to teach you how to use Census data. Census Academy also has a [free newsletter](https://public.govdelivery.com/accounts/USCENSUS/subscriber/new?topic_id=USCENSUS_11971) which will notify you when they release new courses. We encourage you to sign up for this newsletter if you wish to learn more about US Census Data.
 
-The main Census [Training & Workshops page](https://www.census.gov/data/training-workshops.html) has a library of recorded webinars, training resources, how-to videos as well as information on classroom training.
+The Census Bureau's [Training & Workshops page](https://www.census.gov/data/training-workshops.html) has a library of recorded webinars, training resources, how-to videos as well as information on classroom trainings that Census conducts.
 
 The Census Bureau also runs a free [Slack Community](https://join.slack.com/t/uscensusbureau/shared_invite/enQtMjQ3NzUyNTM3NDU3LTZmNGI1MmQzY2Y2ZTU1ODJhNDQwMmY2YmZiNmFkNzg4YmJkYmQzZjQyNDhkNDYxN2JhYjkxZDEwMGI2OGU5NzQ) where you can ask questions and have them answered in real time. The community even has a channel (#r) specifically for R users!
 
@@ -128,4 +126,4 @@ If you have any additional questions, please contact the Data Dissemination Staf
 
 If you have a specific question about an R package you are using, the best resource is normally the package maintainer. The CRAN page for each R package contains the email address of a Maintainer.
 
-If you have a more general R question, or if you are unable to contact the package maintainer, then you might try asking your question on StackOverflow using the R tag ([link](https://stackoverflow.com/tags/r)).
+If you have a more general R question, or if you are unable to contact the package maintainer, then you might try asking your question on StackOverflow using the tag "R" ([link](https://stackoverflow.com/tags/r)). When asking questions on R, it is normally helpful to provide a reproducible example. You can learn more about reproducible examples [here](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example#5963610).
