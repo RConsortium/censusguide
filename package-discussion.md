@@ -11,7 +11,8 @@ In the end we decided to:
 
 ## Measuring Package Popularity
 
-We used the following script to determine packages had the most downloads:
+We used the following script to determine the number of downloads each package had in the last year:
+
 ```
 library(cranlogs)
 library(tidyverse)
@@ -94,14 +95,14 @@ include only the five most popular programs in the main body of the text. But we
 
 ## Exploring Package Functionality
 
-The problem with only looking at package popularity is that some of the less popular packages include important functionality. In particular, we felt it was important to include the `censusapi` and `ipumsr` packages for the following reasons:
+The problem with only looking at package popularity is that some of the less popular packages include important functionality. In particular, we felt it was important to include the `censusapi` and `ipumsr` packages in the main body of the text because:
 
-1. `censusapi` aims to provide access to the entirety of the Census Bureau's API. We felt that awareness of this package is important when discussing how R's package ecosystem facilitates working with the US Census Bureau. While most of the packages in the list already provided access to parts of the Census Bureau's API, none of them provide access to all of it.
-2. `ipumsr` facilitates working with data from IPUMS (Integrated Public Use Microdata Series. IPUMS is the world's largest individual-level population database, and is an important resource in the US Census ecosystem. None of the five most popular packages in our list provides this functionality.
+1. `censusapi` aims to provide access to the entirety of the Census Bureau's API. We felt that awareness of this package is important when discussing how R's package ecosystem facilitates working with the US Census Bureau. While most of the packages in the list already provided access to some of the Census Bureau's API, none of them provide access to all of it.
+2. `ipumsr` facilitates working with data from IPUMS (Integrated Public Use Microdata Series). IPUMS is the world's largest individual-level population database, and is an important resource in the US Census ecosystem. None of the packages in our original list provided this functionality.
 
 ## Describing Packages
 
-In the original draft of this Guide we copied the package descriptions which appear on CRAN verbatim. However, we were concerned that those descriptions might be too sparse. So we invited the package authors to modify the descriptions.
+In the original draft of this Guide we copied the package descriptions which appear on CRAN verbatim. However, we were concerned that those descriptions might be too sparse. So we invited the package authors to modify the.
 
 As an example of this difference, here is how the `ipumsr` package is
 described on CRAN:
