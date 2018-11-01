@@ -1,19 +1,17 @@
 ## Written by Ari Lamstein and Logan Powell
 ### Sponsored by the R Consortium as part of the R Consortium Census Working Group
 
-The U.S. Census Bureau is the premier source of data about America's people, places and economy. This makes the Bureau a natural source of information for data analysts. R programmers who start working with Census Data, however, often run into two problems:
+The [U.S. Census Bureau](https://census.gov/en.html) is the premier source of data about America's people, places and economy. This makes the Bureau a natural source of information for data analysts. R programmers who start working with Census Data, however, often run into two problems:
 
 1. Understanding what data the Census Bureau publishes.
 
-2. Understanding what CRAN packages are available to help with their project.
+2. Understanding what packages on [CRAN](https://cran.r-project.org/) are available to help with their project.
 
 This document aims to help R programmers who are confronted with these  problems. It has three parts:
 
 * [Part 1: What the Census Bureau Provides](#part-1-what-the-census-bureau-provides)
 * [Part 2: How CRAN Can Help](#part-2-how-cran-can-help)
 * [Part 3: How to Learn More](#part-3-how-to-learn-more)
-
-Note: This Guide is intended to provide an introduction to the field: it does not cover every dataset which Census publishes, nor every Census-related package which is on CRAN.
 
 ## Part 1: What the Census Bureau Provides
 
@@ -68,7 +66,7 @@ Using the API requires a getting an API Key, which you can get for free [here](h
 
 ## Part 2: How CRAN Can Help
 
-CRAN (the Comprehensive R Archive Network) provides access to thousands of user
+CRAN provides access to thousands of user
 contributed R packages. While compiling this guide we were able to identify 22
 of those packages that were specifically designed to facilitate working with US
 Census data. You can view the full list of packages

@@ -1,4 +1,4 @@
-Below is the list of all 22 R packages on [CRAN](https://cran.r-project.org/) that we were able to identify as working with data from the US Census Bureau. They are presented in alphabetical order along with the descriptions as they appear on CRAN. Additionally, each package listed here has a link back to the original page on CRAN.
+Below is the list of all 22 R packages on CRAN that we were able to identify as working with data from the US Census Bureau. They are presented in alphabetical order along with the descriptions as they appear on CRAN. Additionally, each package listed here has a link back to the original page on CRAN.
 
 1. [acs](https://cran.r-project.org/web/packages/acs/index.html)
 
