@@ -23,7 +23,7 @@ Broadly speaking, the Census Bureau publishes two types of data: demographic and
 
 The Census Bureau conducts over 100 Censuses, Surveys and Programs. You can view the full list of programs [here](https://www.census.gov/programs-surveys/surveys-programs.html).
 
-It is beyond the scope of this document to detail each of these 100+ datasets. Instead, below we describe the five most popular Census programs as measured by a sample of API requests. (The raw data of this sampling can be viewed [here](/training-resources/popular-datasets.md)).
+It is beyond the scope of this document to detail each of these datasets. Instead, below we describe the five most popular Census programs as measured by a sample of API requests. (The raw data of this sampling can be viewed [here](/training-resources/popular-datasets.md)).
 
 1. [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/). The ACS regularly gathers information previously contained only in the long form of the decennial census, such as ancestry, educational attainment, income, language proficiency, migration, disability, employment, and housing characteristics. These data are used by many public-sector, private-sector, and not-for-profit stakeholders to allocate funding, track shifting demographics, plan for emergencies, and learn about local communities. Sent to approximately 295,000 addresses monthly (or 3.5 million per year), it is the largest household survey that the Census Bureau administers.  (Source: [Wikipedia](https://en.wikipedia.org/wiki/American_Community_Survey)).
 
@@ -52,11 +52,11 @@ Census provides free access to its geographic data and products such as the TIGE
 
 ### Data Dissemination
 
-The primary tools that Census provides for accessing its data are American FactFinder and their API.
+The primary tools that Census uses to disseminate its data are American FactFinder and their API.
 
 #### American Fact Finder
 
-[American FactFinder (AFF)](https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml) is a web application that can help you navigate the various datasets that Census publishes and find the information that you are looking for. In addition to displaying results on the website, there is an option to download the results as a CSV file which you can then import into R.
+[American FactFinder (AFF)](https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml) is a web application that can help you navigate the various datasets that Census publishes. In addition to displaying search results on the website, there is an option to download data as a CSV file which you can then import into R.
 
 #### API
 
@@ -67,14 +67,13 @@ Using the API requires a getting an API Key, which you can get for free [here](h
 ## Part 2: How CRAN Can Help
 
 CRAN provides access to thousands of user
-contributed R packages. While compiling this guide we were able to identify 22
-of those packages that were specifically designed to facilitate working with US
-Census data. You can view the full list of packages
+contributed R packages. We were able to identify 22
+of those packages as being related to the US
+Census Bureau. You can view the full list of those packages
 [here](https://rconsortium.github.io/censusguide/r-packages-all.html).
 
-Below are descriptions of seven of those packages which we believe are likely
-to be of special interest to people starting their first project using R to
-work with Census data. You can learn about our methodology for deciding which
+Below are descriptions of a subset of those packages which we believe are likely
+to be of special interest to people reading this Guide. You can learn about our methodology for deciding which
 packages to include in this list
 [here](https://rconsortium.github.io/censusguide/package-discussion.html).
 

@@ -102,7 +102,7 @@ The problem with only looking at package popularity is that some of the less pop
 
 ## Describing Packages
 
-In the original draft of this Guide we copied the package descriptions which appear on CRAN verbatim. However, we were concerned that those descriptions might be too sparse. So we invited the package authors to modify the.
+In the original draft of this Guide we copied the package descriptions which appear on CRAN verbatim. However, we were concerned that those descriptions might be too sparse. So we invited the package authors to modify them.
 
 As an example of this difference, here is how the `ipumsr` package is
 described on CRAN:
