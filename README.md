@@ -1,3 +1,8 @@
+---
+customjs:
+ - https://raw.githubusercontent.com/RConsortium/censusguide/master/sumome.js
+---
+
 ## Written by Ari Lamstein and Logan Powell
 ### Sponsored by the R Consortium as part of the R Consortium Census Working Group
 
