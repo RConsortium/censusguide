@@ -1,4 +1,4 @@
-## Written by Ari Lamstein and Logan Powell
+## WWritten by Ari Lamstein and Logan Powell
 ### Sponsored by the R Consortium as part of the R Consortium Census Working Group
 
 The [U.S. Census Bureau](https://census.gov/en.html) is the premier source of data about America's people, places and economy. This makes the Bureau a natural source of information for data analysts. R programmers who start working with Census Data, however, often run into two problems:
