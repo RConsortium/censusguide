@@ -89,7 +89,7 @@ packages to include in this list
 
 5. [choroplethrMaps](https://cran.r-project.org/web/packages/choroplethrMaps/index.html). choroplethrMaps contains the Census Bureau's 2010 US State Map (see `?state.map`) and 2010 US County Map (see `?county.map`). These maps were modified in order to make them easier to render (for example, islands off the coast of Alaska that cross the antimeridian were removed).
 
-    Additional metadata about these maps can be found in `?state.regions` and `?county.regions`.
+    Additional metadata about these maps can be found in `?state.regions` and `?county.regions`. You can learn more about choroplethrMaps at [Choroplethr.com](https://www.choroplethr.com).
 
 6. [censusapi](https://cran.r-project.org/web/packages/censusapi/index.html). A wrapper for the U.S. Census Bureau APIs that returns data frames of Census data and metadata. Available datasets include the Decennial Census, American Community Survey, Small Area Health Insurance Estimates, Small Area Income and Poverty Estimates, and Population Estimates and Projections. See https://www.census.gov/data/developers/data-sets.html for more information.
 
