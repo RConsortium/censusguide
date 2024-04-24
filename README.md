@@ -14,55 +14,60 @@ This document aims to help R programmers who are confronted with these  problems
 * [Part 3: How to Learn More](#part-3-how-to-learn-more)
 
 ## Part 1: What the Census Bureau Provides
-
+The Census Bureau is the federal government’s largest statistical agency. The Census Bureau's mission is to serve as the nation’s leading provider of quality data about its people and economy. Our goal is to provide the best mix of timeliness, relevancy, quality, and cost for the data we collect and services we provide. We honor privacy, protect confidentiality, share our expertise globally, and conduct our work openly. We are guided on this mission by scientific objectivity, our strong and capable workforce, our devotion to research-based innovation, and our abiding commitment to our customers. [Please see this at a glance to learn more](U.S. Census Bureau at a Glance)
+ 
 ### Data
-
-Broadly speaking, the Census Bureau publishes two types of data: demographic and geographic.
+Broadly speaking, the Census Bureau publishes three primary types of data: demographic, economic and geographic.
+ 
+The Census Bureau conducts over 130 surveys and programs each year, including our nation’s largest:
+* household survey, the [American Community Survey](https://www.census.gov/programs-surveys/acs.html)
+* business survey, [Quarterly Services Survey](https://www.census.gov/programs-surveys/qss.html)
+You can view the full list of programs [here](https://www.census.gov/programs-surveys/surveys-programs.html), and a full list of programs by topic using the Census survey explorer [here]( https://www.census.gov/data/data-tools/survey-explorer/topics.html).
+* TODO: Add Decennial Census information
 
 #### Demographic Data
+The Demographic Programs Directorate provides relevant and accurate information on the size, distribution, and characteristics of the nation's population, income and poverty, and housing. This area bridges the gap between censuses, and provides information for policy decisions to promote the economic and social well being of the United States.
+ 
+1.  [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/). The ACS regularly gathers information previously contained only in the long form of the decennial census, such as ancestry, educational attainment, income, language proficiency, migration, disability, employment, and housing characteristics. These data are used by many public-sector, private-sector, and not-for-profit stakeholders to allocate funding, track shifting demographics, plan for emergencies, and learn about local communities. Sent to approximately 295,000 addresses monthly (or 3.5 million per year), it is the largest household survey that the Census Bureau administers.  (Source: [Wikipedia](https://en.wikipedia.org/wiki/American_Community_Survey)).
+ 
+2.  [Decennial Census of Population and Housing](https://www.census.gov/programs-surveys/decennial-census.html). The Decennial Census is what most people think of when they think of "The Census". It counts each resident of the country, where they live on April 1, every ten years ending in zero. The Constitution mandates the enumeration to determine how to apportion the House of Representatives among the states. The Decennial Census is the largest peacetime mobilization in the US. (Source: [Decennial Census of Population and Housing](https://www.census.gov/programs-surveys/decennial-census.html)).
+ 
+3.  [Population Estimates Program (PEP)](https://www.census.gov/programs-surveys/popest.html). Each year, PEP publishes estimates of the population for the nation, states, counties, state/county equivalents, and Puerto Rico. It estimates the resident population for each year since the most recent decennial census by using measures of population change (i.,e. births, deaths and migration). The resident population includes all people currently residing in the United States. PEP estimates are used for federal funding allocations, as controls for major surveys including the Current Population Survey and the American Community Survey, for community development, to aid business planning, and as denominators for statistical rates. (Source: [PEP Methodology Paper](https://www2.census.gov/programs-surveys/popest/technical-documentation/methodology/2010-2017/2017-natstcopr-meth.pdf)). TODO: Update to [PEP Methodology Paper](https://www2.census.gov/programs-surveys/popest/technical-documentation/methodology/2020-2023/methods-statement-v2023.pdf)
+ 
+4.  [International Data Base](https://www.census.gov/programs-surveys/international-programs/about/idb.html). The International Data Base (IDB) was developed to provide access to accurate and timely demographic measures for populations around the world.  The database includes a comprehensive set of indicators, as produced by the U.S. Census Bureau since the 1960s. The IDB is updated on a regular basis to provide information needed for research, program planning, and policy-making decisions, in the U.S. and globally. (Source: [International Data Base](https://www.census.gov/programs-surveys/international-programs/about/idb.html)).
+ 
+#### Economic Data
+The US Census Bureau's Economic Directorate is responsible for statistical programs that measure and profile U.S. businesses and government organizations. Its mission is to use transparent, scientific methods to provide broad and impartial information on the changing US economy for use in public and private sector decision making, and its vision to use innovative methods to address stakeholder needs in real time. To accomplish this, it conducts an Economic Census and a Census of Governments every five years and over 60 surveys taken monthly, quarterly, annually, or periodically to produce numerous data products, twelve principal economic indicators, extensive compilations of administrative records, and many research and technical studies.​
+ 
+1.  [Economic Census](https://www.census.gov/programs-surveys/economic-census.html): The Economic Census is the official five-year measure of businesses in the United States providing comprehensive statistics at the national, state, and local levels. It serves as the benchmark for current economic activity, such as the Gross Domestic Product and Producer Price Index. (Source: [Economic Census](https://www.census.gov/programs-surveys/economic-census.html)).
 
-The Census Bureau conducts over 100 Censuses, Surveys and Programs. You can view the full list of programs [here](https://www.census.gov/programs-surveys/surveys-programs.html).
+2.  [Annual Integrated Economic Survey]( https://www.census.gov/programs-surveys/aies.html): The Annual Integrated Economic Survey (AIES) is a re-engineered survey designed to integrate and replace seven existing annual business surveys into a streamlined single survey. It is designed to be easier for businesses to complete, result in better and more timely data, and allow the Census Bureau to reduce costs and operate more efficiently. (Source: [Annual Integrated Economic Survey](https://www.census.gov/programs-surveys/aies.html)).
 
-It is beyond the scope of this document to detail each of these datasets. Instead, below we describe the five most popular Census programs as measured by a sample of API requests. (The raw data of this sampling can be viewed [here](/training-resources/popular-datasets.md)).
+3.  [Annual Business Survey]( https://www.census.gov/programs-surveys/abs.html): The ABS Program combines data results from survey respondents and administrative records to produce data on business ownership. The survey is collected from employer businesses and the nonemployer data are compiled from administrative records. (Source: [Annual Business Survey]( https://www.census.gov/programs-surveys/abs.html)).
 
-1. [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/). The ACS regularly gathers information previously contained only in the long form of the decennial census, such as ancestry, educational attainment, income, language proficiency, migration, disability, employment, and housing characteristics. These data are used by many public-sector, private-sector, and not-for-profit stakeholders to allocate funding, track shifting demographics, plan for emergencies, and learn about local communities. Sent to approximately 295,000 addresses monthly (or 3.5 million per year), it is the largest household survey that the Census Bureau administers.  (Source: [Wikipedia](https://en.wikipedia.org/wiki/American_Community_Survey)).
+4.  [Quarterly Services Survey]( https://www.census.gov/services/index.html): The Quarterly Services Survey (QSS) is the only source of service industry indicator performance providing timely estimates of revenue and expenses for selected service industries. The Bureau of Economic Analysis (BEA) uses QSS data in its estimates of Gross Domestic Product (GDP). (Source: [Quarterly Services Survey]( https://www.census.gov/services/index.html)).
 
-2. [Decennial Census of Population and Housing](https://www.census.gov/programs-surveys/decennial-census.html). The Decennial Census is what most people think of when they think of "The Census". It counts each resident of the country, where they live on April 1, every ten years ending in zero. The Constitution mandates the enumeration to determine how to apportion the House of Representatives among the states. The Decennial Census is the largest peacetime mobilization in the US. (Source: [Decennial Census of Population and Housing](https://www.census.gov/programs-surveys/decennial-census.html)).
-
-3. [Population Estimates Program (PEP)](https://www.census.gov/programs-surveys/popest.html). Each year, PEP publishes estimates of the population for the nation, states, counties, state/county equivalents, and Puerto Rico. It estimates the resident population for each year since the most recent decennial census by using measures of population change (i.,e. births, deaths and migration). The resident population includes all people currently residing in the United States. PEP estimates are used for federal funding allocations, as controls for major surveys including the Current Population Survey and the American Community Survey, for community development, to aid business planning, and as denominators for statistical rates. (Source: [PEP Methodology Paper](https://www2.census.gov/programs-surveys/popest/technical-documentation/methodology/2010-2017/2017-natstcopr-meth.pdf)).
-
-4. [Survey of Business Owners](https://www.census.gov/programs-surveys/sbo.html). The Survey of Business Owners (SBO) provides the only comprehensive, regularly collected source of information on selected economic and demographic characteristics for businesses and business owners by gender, ethnicity, race, and veteran status. (Source: [Survey of Business Owners](https://www.census.gov/programs-surveys/sbo.html)).
-
-5. [International Data Base](https://www.census.gov/programs-surveys/international-programs/about/idb.html). The International Data Base (IDB) was developed to provide access to accurate and timely demographic measures for populations around the world.  The database includes a comprehensive set of indicators, as produced by the U.S. Census Bureau since the 1960s. The IDB is updated on a regular basis to provide information needed for research, program planning, and policy-making decisions, in the U.S. and globally. (Source:
-[International Data Base](https://www.census.gov/programs-surveys/international-programs/about/idb.html)).
-
+ 
 #### Geographic Data
-
-Geography is a central concept to the Census Bureau. Statistics are normally reported for either the entire nation, or some specific geographic subdivision of the country.
-
+The [Geography program](https://www.census.gov/programs-surveys/geography.html) is central to the work of the Census Bureau. Statistics are normally reported for either the entire nation, or some specific geographic subdivision of the country.
 Most Americans can name the State, County and ZIP Code that they live in. But as the diagram below shows, the Census Bureau's geographic hierarchy is much more complex than that!
 ![Census Geo](census-geo.png) (Source: [Standard Hierarchy of Census Geographic Entities](https://www2.census.gov/geo/pdfs/reference/geodiagram.pdf))
-
 Note that most datasets provide data for only a subset of these geographies. For example:
  * The Decennial Census publishes data down to Block level (the smallest geography).
  * The American Community Survey (ACS) publishes data down to the Block Group level (the level above Blocks).
  * The Population Estimates Program (PEP) only publishes data down to the county level (two levels above the Block Group level).
-
-Census provides free access to its geographic data and products such as the TIGER/Line Shapefiles, KMLs, TIGERweb, cartographic boundary files, geographic relationship files, and reference and thematic maps. You can access this data [here](https://www.census.gov/geography.html).
-
+Census provides free access to its geographic data and products such as the TIGER/Line Shapefiles, KMLs, TIGERweb, cartographic boundary files, geographic relationship files, and reference and thematic maps.
+ 
 ### Data Dissemination
-
-The primary tools that Census uses to disseminate its data are [data.census.gov](https://data.census.gov/) and the Census data API.
-
-#### American Fact Finder
-
-[American FactFinder (AFF)](https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml) is a web application that can help you navigate the various datasets that Census publishes. In addition to displaying search results on the website, there is an option to download data as a CSV file which you can then import into R.
-
+The primary tools that Census uses to disseminate its data are [data.census.gov]( https://data.census.gov/) and their [API](https://www.census.gov/data/developers/data-sets.html).
+ 
+#### data.census.gov
+[data.census.gov](https://data.census.gov/) is a web application that can help you explore Census data and navigate the various datasets that Census publishes. In addition to allowing interactive searches to create data tables on the website, there is an option to download data as a CSV file which you can then import into R.
+ 
 #### API
-
 The Census Bureau has an API which provides access to many of its datasets. You can learn more about the API, including which datasets are available, [here](https://www.census.gov/developers/).
-
 Using the API requires a getting an API Key, which you can get for free [here](https://api.census.gov/data/key_signup.html).
+
 
 ## Part 2: How CRAN Can Help
 
