@@ -52,7 +52,7 @@ Census provides free access to its geographic data and products such as the TIGE
 
 ### Data Dissemination
 
-The primary tools that Census uses to disseminate its data are American FactFinder and their API.
+The primary tools that Census uses to disseminate its data are [data.census.gov](https://data.census.gov/) and the Census data API.
 
 #### American Fact Finder
 
