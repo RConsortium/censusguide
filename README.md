@@ -22,8 +22,9 @@ Broadly speaking, the Census Bureau publishes three primary types of data: demog
 The Census Bureau conducts over 130 surveys and programs each year, including our nation’s largest:
 * household survey, the [American Community Survey](https://www.census.gov/programs-surveys/acs.html)
 * business survey, [Quarterly Services Survey](https://www.census.gov/programs-surveys/qss.html)
+* Decennial Census, [Decennial Census of Population and Housing](https://www.census.gov/programs-surveys/decennial-census.html)
+
 You can view the full list of programs [here](https://www.census.gov/programs-surveys/surveys-programs.html), and a full list of programs by topic using the Census survey explorer [here]( https://www.census.gov/data/data-tools/survey-explorer/topics.html).
-* TODO: Add Decennial Census information
 
 #### Demographic Data
 The Demographic Programs Directorate provides relevant and accurate information on the size, distribution, and characteristics of the nation's population, income and poverty, and housing. This area bridges the gap between censuses, and provides information for policy decisions to promote the economic and social well being of the United States.
@@ -32,7 +33,7 @@ The Demographic Programs Directorate provides relevant and accurate information 
  
 2.  [Decennial Census of Population and Housing](https://www.census.gov/programs-surveys/decennial-census.html). The Decennial Census is what most people think of when they think of "The Census". It counts each resident of the country, where they live on April 1, every ten years ending in zero. The Constitution mandates the enumeration to determine how to apportion the House of Representatives among the states. The Decennial Census is the largest peacetime mobilization in the US. (Source: [Decennial Census of Population and Housing](https://www.census.gov/programs-surveys/decennial-census.html)).
  
-3.  [Population Estimates Program (PEP)](https://www.census.gov/programs-surveys/popest.html). Each year, PEP publishes estimates of the population for the nation, states, counties, state/county equivalents, and Puerto Rico. It estimates the resident population for each year since the most recent decennial census by using measures of population change (i.,e. births, deaths and migration). The resident population includes all people currently residing in the United States. PEP estimates are used for federal funding allocations, as controls for major surveys including the Current Population Survey and the American Community Survey, for community development, to aid business planning, and as denominators for statistical rates. (Source: [PEP Methodology Paper](https://www2.census.gov/programs-surveys/popest/technical-documentation/methodology/2010-2017/2017-natstcopr-meth.pdf)). TODO: Update to [PEP Methodology Paper](https://www2.census.gov/programs-surveys/popest/technical-documentation/methodology/2020-2023/methods-statement-v2023.pdf)
+3.  [Population Estimates Program (PEP)](https://www.census.gov/programs-surveys/popest.html). Each year, PEP publishes estimates of the population for the nation, states, counties, state/county equivalents, and Puerto Rico. It estimates the resident population for each year since the most recent decennial census by using measures of population change (i.,e. births, deaths and migration). The resident population includes all people currently residing in the United States. PEP estimates are used for federal funding allocations, as controls for major surveys including the Current Population Survey and the American Community Survey, for community development, to aid business planning, and as denominators for statistical rates. (Source: [PEP Methodology Paper](https://www2.census.gov/programs-surveys/popest/technical-documentation/methodology/2020-2023/methods-statement-v2023.pdf)).
  
 4.  [International Data Base](https://www.census.gov/programs-surveys/international-programs/about/idb.html). The International Data Base (IDB) was developed to provide access to accurate and timely demographic measures for populations around the world.  The database includes a comprehensive set of indicators, as produced by the U.S. Census Bureau since the 1960s. The IDB is updated on a regular basis to provide information needed for research, program planning, and policy-making decisions, in the U.S. and globally. (Source: [International Data Base](https://www.census.gov/programs-surveys/international-programs/about/idb.html)).
  
@@ -47,7 +48,6 @@ The US Census Bureau's Economic Directorate is responsible for statistical progr
 
 4.  [Quarterly Services Survey]( https://www.census.gov/services/index.html): The Quarterly Services Survey (QSS) is the only source of service industry indicator performance providing timely estimates of revenue and expenses for selected service industries. The Bureau of Economic Analysis (BEA) uses QSS data in its estimates of Gross Domestic Product (GDP). (Source: [Quarterly Services Survey]( https://www.census.gov/services/index.html)).
 
- 
 #### Geographic Data
 The [Geography program](https://www.census.gov/programs-surveys/geography.html) is central to the work of the Census Bureau. Statistics are normally reported for either the entire nation, or some specific geographic subdivision of the country.
 Most Americans can name the State, County and ZIP Code that they live in. But as the diagram below shows, the Census Bureau's geographic hierarchy is much more complex than that!
@@ -130,6 +130,10 @@ The Census Bureau also runs a free [Slack Community](https://join.slack.com/t/us
 If you have any additional questions, please contact the Data Dissemination Staff at Census:
 - Phone: 1-844-ASK-DATA
 - Email: census.askdata@census.gov
+
+If you have any additional questions regarding the Census API, please contact the API team at Census:
+- Slack: [uscensusbureau.slack.com](https://join.slack.com/t/uscensusbureau/shared_invite/enQtMjQ3NzUyNTM3NDU3LTZmNGI1MmQzY2Y2ZTU1ODJhNDQwMmY2YmZiNmFkNzg4YmJkYmQzZjQyNDhkNDYxN2JhYjkxZDEwMGI2OGU5NzQ)
+- Email: census.data@census.gov
 
 ### R Packages
 
