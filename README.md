@@ -66,8 +66,12 @@ The primary tools that Census uses to disseminate its data are [data.census.gov]
  
 #### API
 The Census Bureau has an API which provides access to many of its datasets. You can learn more about the API, including which datasets are available, [here](https://www.census.gov/developers/).
-Using the API requires a getting an API Key, which you can get for free [here](https://api.census.gov/data/key_signup.html).
-
+ * Using the API requires a getting an API Key, which you can get for free [here](https://api.census.gov/data/key_signup.html).
+ * See here for the [Census Data API User Guide](https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-guide.pdf).
+ * See here for a tutorial on [Using the API to Get All Results for an ACS Table](https://www.census.gov/library/video/2020/using-api-all-results-for-acs-table.html).
+ * See here for a tutorial on [Using the API to Get Results for Multiple Estimates](https://www.census.gov/library/video/2020/using-api-results-for-multiple-estimates.html).
+ * Explore [ACS Data Stories–Stats in Action!](https://www.census.gov/programs-surveys/acs/about/acs-data-stories.html) to see how the public is using ACS data.
+ * Visit the Slack [show-and-tell](https://app.slack.com/client/T6AL55003/CRY4R9R7S) channel and show how you use Census data.
 
 ## Part 2: How CRAN Can Help
 
