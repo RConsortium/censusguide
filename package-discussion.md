@@ -17,17 +17,25 @@ We used the following script to determine the number of downloads each package h
 library(cranlogs)
 library(tidyverse)
 
-# 22 packages that, based on their description, appear related to US
+# 33 packages that, based on their description, appear related to US
 # census data
 packages = c("acs",
+             "cdltools",
+"censable",
              "census",
              "censusapi",
              "censusGeography",
+             "censusr",
+             "cpsR",
+             "cpsvote",
              "choroplethr",
              "choroplethrMaps",
+             "easycensus",
              "idbr",
              "ipumsr",
              "noncensus",
+             "ppmf",
+             "predictrace",
              "SeerMapper",
              "SeerMapper2010East",
              "SeerMapper2010Regs",
@@ -40,10 +48,13 @@ packages = c("acs",
              "totalcensus",
              "UScensus2000cdp",
              "UScensus2000tract",
-             "UScensus2010")
+             "UScensus2010",
+             "usdata",
+             "us.census.geoheader",
+             "zctaCrosswalk")
 
 # use last year's data
-df = cran_downloads(packages=packages, from="2017-10-24", to="2018-10-24")
+df = cran_downloads(packages=packages, from="2017-10-24", to="2024-05-31")
 
 # sort by package
 df2 = df %>%
@@ -60,30 +71,41 @@ df2 %>%
 
 The script gives us the following output:
 ```
-#    package            annual_downloads percent
-#    <chr>                         <dbl>   <dbl>
-#  1 tigris                        40646      22
-#  2 acs                           39077      21
-#  3 choroplethr                   31225      17
-#  4 tidycensus                    15044       8
-#  5 choroplethrMaps               13383       7
-#  6 censusapi                      7260       4
-#  7 ipumsr                         5857       3
-#  8 UScensus2010                   4280       2
-#  9 noncensus                      4206       2
-# 10 UScensus2000tract              3278       2
-# 11 census                         2918       2
-# 12 idbr                           2856       2
-# 13 UScensus2000cdp                2800       1
-# 14 totalcensus                    2524       1
-# 15 censusGeography                2013       1
-# 16 SeerMapper                     1529       1
-# 17 SeerMapperWest                 1506       1
-# 18 SeerMapperRegs                 1481       1
-# 19 SeerMapper2010Regs             1477       1
-# 20 SeerMapper2010East             1475       1
-# 21 SeerMapperEast                 1473       1
-# 22 SeerMapper2010West             1468       1
+#     package             annual_downloads percent
+#     <chr>                          <dbl>   <dbl>
+#   1 tigris                        727026      24
+#   2 tidycensus                    526920      18
+#   3 usdata                        265676       9
+#   4 choroplethr                   199049       7
+#   5 acs                           192425       6
+#   6 ipumsr                        190174       6
+#   7 censusapi                     139707       5
+#   8 choroplethrMaps               133883       4
+#   9 noncensus                      99437       3
+#  10 totalcensus                    73907       2
+#  11 UScensus2010                   36945       1
+#  12 idbr                           36860       1
+#  13 censusr                        32909       1
+#  14 UScensus2000tract              27003       1
+#  15 censusGeography                26732       1
+#  16 UScensus2000cdp                25146       1
+#  17 SeerMapper                     24432       1
+#  18 SeerMapper2010Regs             24308       1
+#  19 SeerMapper2010West             24266       1
+#  20 SeerMapperWest                 24207       1
+#  21 SeerMapper2010East             24093       1
+#  22 SeerMapperEast                 23988       1
+#  23 SeerMapperRegs                 23897       1
+#  24 predictrace                    21903       1
+#  25 censable                       12691       0
+#  26 cpsvote                        11287       0
+#  27 cpsR                           10301       0
+#  28 us.census.geoheader             9546       0
+#  29 easycensus                      7278       0
+#  30 ppmf                            6227       0
+#  31 census                          5047       0
+#  32 zctaCrosswalk                   2552       0
+#  33 cdltools                           0       0
 ```
 
 This data shows that some packages in our list are much more popular than others. Additionally, popularity decreasing sharply.
