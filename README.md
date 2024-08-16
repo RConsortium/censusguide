@@ -89,19 +89,31 @@ packages to include in this list
 
 1. [tigris](https://cran.r-project.org/web/packages/tigris/index.html). Download TIGER/Line shapefiles from the United States Census Bureau (https://www.census.gov/geo/maps-data/data/tiger-line.html) and load into R as 'SpatialDataFrame' or 'sf' objects.
 
+   The tigris package has documentation on [github](https://github.com/walkerke/tigris?tab=readme-ov-file#tigris) and in [Chapter 5](https://walker-data.com/census-r/census-geographic-data-and-applications-in-r.html) of the book *Analyzing US Census Data: Methods, Maps, and Models in R*.
+
 2. [acs](https://cran.r-project.org/web/packages/acs/index.html). Provides a general toolkit for downloading, managing, analyzing, and presenting data from the U.S. Census (https://www.census.gov/data/developers/data-sets.html), including SF1 (Decennial short-form), SF3 (Decennial long-form), and the American Community Survey (ACS). Confidence intervals provided with ACS data are converted to standard errors to be bundled with estimates in complex acs objects. Package provides new methods to conduct standard operations on acs objects and present/plot data in statistically appropriate ways.
+
+   The acs package has documentation in its [README](https://cran.r-project.org/web/packages/acs/readme/README.html) page.
 
 3. [choroplethr](https://cran.r-project.org/web/packages/choroplethr/index.html). Choroplethr facilitates creating choropleth maps of data at the State, County and Tract level through the functions `?state_choropleth`, `?county_choropleth` and `?tract_choropleth`. Choropleths are thematic maps where geographic regions, such as states, are colored according to some metric, such as the number of people who live in that state.
 
-    In addition to being a general purpose mapping package, choroplethr provides native support for mapping data from the American Community Survey (ACS) through functions such as `?get_state_demographics` and `?get_acs_data`. You can learn more about choroplethr at [Choroplethr.com](https://www.choroplethr.com).
+    In addition to being a general purpose mapping package, choroplethr provides native support for mapping data from the American Community Survey (ACS) through functions such as `?get_state_demographics` and `?get_acs_data`. 
+    
+    Documentation for choroplethr includes three online courses and a recording of a talk given at the CDC. You can access these resources for free at at [Choroplethr.com](https://www.choroplethr.com).
 
 4. [tidycensus](https://cran.r-project.org/web/packages/tidycensus/index.html). An integrated R interface to the decennial US Census and American Community Survey APIs and the US Census Bureau's geographic boundary files. Allows R users to return Census and ACS data as tidyverse-ready data frames, and optionally returns a list-column with feature geometry for many geographies.
+
+    Documentation for tidycensus includes five articles on the project's [website](https://walker-data.com/tidycensus/) and the author's book [Analyzing US Census Data: Methods, Maps, and Models in R](https://walker-data.com/census-r/index.html).
 
 5. [choroplethrMaps](https://cran.r-project.org/web/packages/choroplethrMaps/index.html). choroplethrMaps contains the Census Bureau's 2010 US State Map (see `?state.map`) and 2010 US County Map (see `?county.map`). These maps were modified in order to make them easier to render (for example, islands off the coast of Alaska that cross the antimeridian were removed).
 
     Additional metadata about these maps can be found in `?state.regions` and `?county.regions`. You can learn more about choroplethrMaps at [Choroplethr.com](https://www.choroplethr.com).
 
+    Documentation for choroplethrMaps includes three online courses and a recording of a talk given at the CDC. You can access these resources for free at at [Choroplethr.com](https://www.choroplethr.com).
+
 6. [censusapi](https://cran.r-project.org/web/packages/censusapi/index.html). A wrapper for the U.S. Census Bureau APIs that returns data frames of Census data and metadata. Available datasets include the Decennial Census, American Community Survey, Small Area Health Insurance Estimates, Small Area Income and Poverty Estimates, and Population Estimates and Projections. See https://www.census.gov/data/developers/data-sets.html for more information.
+
+    The censusapi package is documented on its [github](https://github.com/hrecht/censusapi) page.
 
 7. [ipumsr](https://cran.r-project.org/web/packages/ipumsr/index.html). The ipumsr package assists in the import and use of IPUMS extracts in R. IPUMS
 data is a repackaging of census and survey data from around the world to a
@@ -122,18 +134,45 @@ it is not known when it will be available.
 which is a monthly workforce survey conducted by the Census Bureau.
      - [IPUMS International](https://international.ipums.org) includes the US Census microdata in the same format as census data from 93 other countries.
 
+     ipumsr is documented on its [github](https://github.com/ipums/ipumsr) page.
+
 8. [zctaCrosswalk](https://cran.r-project.org/web/packages/zctaCrosswalk/index.html). Contains the US Census Bureau's 2020 ZCTA to County Relationship File, as well as convenience functions to translate between States, Counties and ZIP Code Tabulation Areas (ZCTAs).
+
+    zctaCrosswalk is documented through three vignettes: [Introduction](https://cran.r-project.org/web/packages/zctaCrosswalk/vignettes/a01_introduction.html), [Workflow with tidycensus](https://cran.r-project.org/web/packages/zctaCrosswalk/vignettes/a02_workflow-tidycensus.html) and [Developer Notes](https://cran.r-project.org/web/packages/zctaCrosswalk/vignettes/a03_developer-notes.html).
+
 9. [usdata](https://cran.r-project.org/web/packages/usdata/index.html). Demographic data on the United States at the county and state levels spanning multiple years. Allows for conversion between state abbreviations and names. Includes data collected from Census Quick Facts (note: no longer available as of 2020) and its accompanying pages. Provides county level data from various years 2000 to 2019, demographic, population, labor and employment, election and voter turnout information, and more.
+
+   Documentation for the usdata can be found on its [github](https://github.com/OpenIntroStat/usdata/) page. Note that this package was created for the [OpenIntro](https://www.openintro.org/) Statistics course.
+
 10. [cdlTools](https://cran.r-project.org/web/packages/cdlTools/index.html). Downloads USDA National Agricultural Statistics Service (NASS) cropscape data for a specified state. Utilities for fips, abbreviation, and name conversion are also provided. Full functionality requires an internet connection, but data sets can be cached for later off-line use.                                                                                                                                                                                                                          Note: The function census2010FIPS contains U.S. Census 2010 FIPS Data containing county names, state and county FIPS codes, and state abbreviations. The very useful function fips converts U.S. state and county names and abbreviations to and from FIPS codes.
 
 11. [censable](https://cran.r-project.org/web/packages/censable/index.html). Creates a common framework for organizing, naming, and gathering population, age, race, and ethnicity data from the Census Bureau. Accesses the API. Provides tools for adding information to existing data to line up with Census data.
-12. [censusr](https://cran.r-project.org/web/packages/censusr/index.html). Use the US Census API to collect summary data tables for SF1 and ACS datasets at arbitrary geographies.
+
+    The censable package is documented on its [github](https://github.com/christopherkenny/censable) page. 
+
 13. [cpsR](https://cran.r-project.org/web/packages/cpsR/index.html). Load Current Population Survey (CPS) microdata into R using the 'Census Bureau Data' API, including basic monthly CPS and CPS ASEC microdata.
+
+    The cpsR package is documented on its [github](https://github.com/matt-saenz/cpsR) page.
+
 14. [cpsvote](https://cran.r-project.org/web/packages/cpsvote/index.html). Provides automated methods for downloading, recoding, and merging selected years of the Current Population Survey's Voting and Registration Supplement, a large N national survey about registration, voting, and non-voting in United States federal elections. Provides documentation for appropriate use of sample weights to generate statistical estimates, drawing from Hur & Achen (2013).
+
+    The cpsvote package is documented on its [github](https://github.com/Reed-EVIC/cpsvote) page.
+
 15. [easycensus](https://cran.r-project.org/web/packages/easycensus/index.html). Extracting desired data using the proper Census variable names can be time-consuming. This package takes the pain out of that process by providing functions to quickly locate variables and download labeled tables from the Census APIs.
+
+    The easycensus package is documented on its [github](https://github.com/CoryMcCartan/easycensus/) page.
+
 16. [ppmf](https://cran.r-project.org/web/packages/ppmf/index.html). Implements data processing to align modern differentially private data with formatting of older US Census data releases. The primary goal is to read in Census Privacy Protected Microdata Files data in a reproducible way. This includes tools for aggregating to relevant levels of geography by creating geographic identifiers which match the US Census Bureau's numbering. Additionally, there are tools for grouping race numeric identifiers into categories, consistent with OMB (Office of Management and Budget) classifications. Functions exist for downloading and linking to existing sources of privacy protected microdata.
+
+    The ppmf package is documented on its [github](https://github.com/christopherkenny/ppmf/) page.
+
 17. [predictrace](https://cran.r-project.org/web/packages/predictrace/index.html). Predicts the most common race of a surname and based on U.S. Census data, and the most common first named based on U.S. Social Security Administration data.
+
+    The predictrace package is documented on its [github](https://github.com/jacobkap/predictrace) page.
+
 18. [us.census.geoheader](https://cran.r-project.org/web/packages/us.census.geoheader/index.html). A simple interface to the Geographic Header information from the "2010 US Census Summary File 2". Note that this package only provides access to parts of the geographic header ('geoheader') of the file. In particular, only the first 101 columns of the geoheader are included and, more importantly, only rows with summary levels (SUMLEVs) 010 through 050 (nation down through county level) are included. In addition to access to (part of) the geoheader, the package also provides a decode function that takes a column name and value and, for certain columns, returns "the meaning" of that column (i.e., a "SUMLEV" value of 40 means "State"); without a value, the decode function attempts to describe the column itself.
+
+    The us.census.geoheader package is documented in [this](https://cran.r-project.org/web/packages/us.census.geoheader/vignettes/a-tour.html) vignette.
 
 
 ## Part 3: How to Learn More
