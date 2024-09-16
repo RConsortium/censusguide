@@ -1,3 +1,5 @@
+# A Guide to Working with Census Data in R
+
 ## Written by the R Consortium Census Working Group
 ### Sponsored by the R Consortium as part of the R Consortium Census Working Group
 
@@ -120,7 +122,7 @@ it is not known when it will be available.
      - [NHGIS](https://nhgis.org) provides population, housing, agricultural, and economic data, along with GIS-compatible boundary files, for geographic units in the United States from 1790 to the present.
      - [IPUMS CPS](https://cps.ipums.org) provides the Current Population Survey
 which is a monthly workforce survey conducted by the Census Bureau.
-     - [IPUMS International](https://international.ipums.org) includes the US Census microdata in the same format as census data from 93 other countries.
+     - [IPUMS International](https://international.ipums.org) includes the US Census microdata in the same format as census data from 93 other countries. 
 
 8. [zctaCrosswalk](https://cran.r-project.org/web/packages/zctaCrosswalk/index.html). Contains the US Census Bureau's 2020 ZCTA to County Relationship File, as well as convenience functions to translate between States, Counties and ZIP Code Tabulation Areas (ZCTAs).
 9. [usdata](https://cran.r-project.org/web/packages/usdata/index.html). Demographic data on the United States at the county and state levels spanning multiple years. Allows for conversion between state abbreviations and names. Includes data collected from Census Quick Facts (note: no longer available as of 2020) and its accompanying pages. Provides county level data from various years 2000 to 2019, demographic, population, labor and employment, election and voter turnout information, and more.
