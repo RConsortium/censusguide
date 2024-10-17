@@ -114,8 +114,8 @@ family and community context. Users can go to the
 [IPUMS website](https://ipums.org) and create an extract with only the
 samples and variables they are interested in, and then import their downloaded
 extract with the ipumsr package. The ipumsr package also provides functions for 
-creating data extracts and browsing metadata programmatically via the IPUMS 
-API.
+creating data extracts and browsing metadata programmatically via the 
+[IPUMS API](https://developer.ipums.org/).
 
     Several IPUMS projects include data from the US Census Bureau:
 
