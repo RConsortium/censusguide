@@ -111,10 +111,11 @@ format harmonized across space and time and with enhanced
 documentation. With IPUMS data, it easy to study change, conduct comparative
 research, merge information across data types, and analyze individuals within
 family and community context. Users can go to the
-[IPUMS website](https://usa.ipums.org) and create an extract with only the
+[IPUMS website](https://ipums.org) and create an extract with only the
 samples and variables they are interested in, and then import their downloaded
-extract with the ipumsr package. Work has begun on an API for IPUMS data, but
-it is not known when it will be available.
+extract with the ipumsr package. The ipumsr package also provides functions for 
+creating data extracts and browsing metadata programmatically via the 
+[IPUMS API](https://developer.ipums.org/).
 
     Several IPUMS projects include data from the US Census Bureau:
 
