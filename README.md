@@ -126,16 +126,25 @@ which is a monthly workforce survey conducted by the Census Bureau.
      - [IPUMS International](https://international.ipums.org) includes the US Census microdata in the same format as census data from 93 other countries. 
 
 8. [zctaCrosswalk](https://cran.r-project.org/web/packages/zctaCrosswalk/index.html). Contains the US Census Bureau's 2020 ZCTA to County Relationship File, as well as convenience functions to translate between States, Counties and ZIP Code Tabulation Areas (ZCTAs).
+
 9. [usdata](https://cran.r-project.org/web/packages/usdata/index.html). Demographic data on the United States at the county and state levels spanning multiple years. Allows for conversion between state abbreviations and names. Includes data collected from Census Quick Facts (note: no longer available as of 2020) and its accompanying pages. Provides county level data from various years 2000 to 2019, demographic, population, labor and employment, election and voter turnout information, and more.
+
 10. [cdlTools](https://cran.r-project.org/web/packages/cdlTools/index.html). Downloads USDA National Agricultural Statistics Service (NASS) cropscape data for a specified state. Utilities for fips, abbreviation, and name conversion are also provided. Full functionality requires an internet connection, but data sets can be cached for later off-line use.                                                                                                                                                                                                                          Note: The function census2010FIPS contains U.S. Census 2010 FIPS Data containing county names, state and county FIPS codes, and state abbreviations. The very useful function fips converts U.S. state and county names and abbreviations to and from FIPS codes.
 
 11. [censable](https://cran.r-project.org/web/packages/censable/index.html). Creates a common framework for organizing, naming, and gathering population, age, race, and ethnicity data from the Census Bureau. Accesses the API. Provides tools for adding information to existing data to line up with Census data.
+
 12. [censusr](https://cran.r-project.org/web/packages/censusr/index.html). Use the US Census API to collect summary data tables for SF1 and ACS datasets at arbitrary geographies.
+
 13. [cpsR](https://cran.r-project.org/web/packages/cpsR/index.html). Load Current Population Survey (CPS) microdata into R using the 'Census Bureau Data' API, including basic monthly CPS and CPS ASEC microdata.
+
 14. [cpsvote](https://cran.r-project.org/web/packages/cpsvote/index.html). Provides automated methods for downloading, recoding, and merging selected years of the Current Population Survey's Voting and Registration Supplement, a large N national survey about registration, voting, and non-voting in United States federal elections. Provides documentation for appropriate use of sample weights to generate statistical estimates, drawing from Hur & Achen (2013).
+
 15. [easycensus](https://cran.r-project.org/web/packages/easycensus/index.html). Extracting desired data using the proper Census variable names can be time-consuming. This package takes the pain out of that process by providing functions to quickly locate variables and download labeled tables from the Census APIs.
+
 16. [ppmf](https://cran.r-project.org/web/packages/ppmf/index.html). Implements data processing to align modern differentially private data with formatting of older US Census data releases. The primary goal is to read in Census Privacy Protected Microdata Files data in a reproducible way. This includes tools for aggregating to relevant levels of geography by creating geographic identifiers which match the US Census Bureau's numbering. Additionally, there are tools for grouping race numeric identifiers into categories, consistent with OMB (Office of Management and Budget) classifications. Functions exist for downloading and linking to existing sources of privacy protected microdata.
+
 17. [predictrace](https://cran.r-project.org/web/packages/predictrace/index.html). Predicts the most common race of a surname and based on U.S. Census data, and the most common first named based on U.S. Social Security Administration data.
+
 18. [us.census.geoheader](https://cran.r-project.org/web/packages/us.census.geoheader/index.html). A simple interface to the Geographic Header information from the "2010 US Census Summary File 2". Note that this package only provides access to parts of the geographic header ('geoheader') of the file. In particular, only the first 101 columns of the geoheader are included and, more importantly, only rows with summary levels (SUMLEVs) 010 through 050 (nation down through county level) are included. In addition to access to (part of) the geoheader, the package also provides a decode function that takes a column name and value and, for certain columns, returns "the meaning" of that column (i.e., a "SUMLEV" value of 40 means "State"); without a value, the decode function attempts to describe the column itself.
 
 
