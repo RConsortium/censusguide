@@ -113,9 +113,7 @@ research, merge information across data types, and analyze individuals within
 family and community context. Users can go to the
 [IPUMS website](https://ipums.org) and create an extract with only the
 samples and variables they are interested in, and then import their downloaded
-extract with the ipumsr package. The ipumsr package also provides functions for 
-creating data extracts and browsing metadata programmatically via the 
-[IPUMS API](https://developer.ipums.org/).
+extract with the ipumsr package. 
 
     Several IPUMS projects include data from the US Census Bureau:
 
@@ -124,6 +122,8 @@ creating data extracts and browsing metadata programmatically via the
      - [IPUMS CPS](https://cps.ipums.org) provides the Current Population Survey
 which is a monthly workforce survey conducted by the Census Bureau.
      - [IPUMS International](https://international.ipums.org) includes the US Census microdata in the same format as census data from 93 other countries. 
+
+    The `ipumsr` package also provides functions for creating data extracts and browsing metadata programmatically via the [IPUMS API](https://developer.ipums.org/).
 
 8. [zctaCrosswalk](https://cran.r-project.org/web/packages/zctaCrosswalk/index.html). Contains the US Census Bureau's 2020 ZCTA to County Relationship File, as well as convenience functions to translate between States, Counties and ZIP Code Tabulation Areas (ZCTAs).
 
