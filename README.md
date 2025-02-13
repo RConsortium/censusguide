@@ -91,12 +91,6 @@ packages to include in this list
 
 1. [tigris](https://cran.r-project.org/web/packages/tigris/index.html). Download TIGER/Line shapefiles from the United States Census Bureau (https://www.census.gov/geo/maps-data/data/tiger-line.html) and load into R as 'SpatialDataFrame' or 'sf' objects.
 
-2. [acs](https://cran.r-project.org/web/packages/acs/index.html). Provides a general toolkit for downloading, managing, analyzing, and presenting data from the U.S. Census (https://www.census.gov/data/developers/data-sets.html), including SF1 (Decennial short-form), SF3 (Decennial long-form), and the American Community Survey (ACS). Confidence intervals provided with ACS data are converted to standard errors to be bundled with estimates in complex acs objects. Package provides new methods to conduct standard operations on acs objects and present/plot data in statistically appropriate ways.
-
-3. [choroplethr](https://cran.r-project.org/web/packages/choroplethr/index.html). Choroplethr facilitates creating choropleth maps of data at the State, County and Tract level through the functions `?state_choropleth`, `?county_choropleth` and `?tract_choropleth`. Choropleths are thematic maps where geographic regions, such as states, are colored according to some metric, such as the number of people who live in that state.
-
-    In addition to being a general purpose mapping package, choroplethr provides native support for mapping data from the American Community Survey (ACS) through functions such as `?get_state_demographics` and `?get_acs_data`. You can learn more about choroplethr at [Choroplethr.com](https://www.choroplethr.com).
-
 4. [tidycensus](https://cran.r-project.org/web/packages/tidycensus/index.html). An integrated R interface to the decennial US Census and American Community Survey APIs and the US Census Bureau's geographic boundary files. Allows R users to return Census and ACS data as tidyverse-ready data frames, and optionally returns a list-column with feature geometry for many geographies.
 
 5. [choroplethrMaps](https://cran.r-project.org/web/packages/choroplethrMaps/index.html). choroplethrMaps contains the Census Bureau's 2010 US State Map (see `?state.map`) and 2010 US County Map (see `?county.map`). These maps were modified in order to make them easier to render (for example, islands off the coast of Alaska that cross the antimeridian were removed).
