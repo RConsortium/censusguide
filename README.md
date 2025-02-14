@@ -71,6 +71,7 @@ The Census Bureau has an API which provides access to many of its datasets. You 
  * Using the API requires a getting an API Key, which you can get for free [here](https://api.census.gov/data/key_signup.html).
  * See here for the [Census Data API User Guide](https://www.census.gov/content/dam/Census/data/developers/api-user-guide/api-guide.pdf).
  * Explore the [ABCs of the Census API](https://www.youtube.com/watch?v=JbThy7GUg3k) with Census Bureau staff.
+ * See here for a tutorial on [Census API Basics: Simple Steps to Better Data Access](https://www.youtube.com/watch?v=d-FJ2IyVfdk)
  * See here for a tutorial on [Using the API to Get All Results for an ACS Table](https://www.census.gov/library/video/2020/using-api-all-results-for-acs-table.html).
  * See here for a tutorial on [Using the API to Get Results for Multiple Estimates](https://www.census.gov/library/video/2020/using-api-results-for-multiple-estimates.html).
  * Explore [ACS Data Stories–Stats in Action!](https://www.census.gov/programs-surveys/acs/about/acs-data-stories.html) to see how the public is using ACS data.
